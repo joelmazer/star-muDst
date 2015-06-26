@@ -1,7 +1,7 @@
 #ifndef StMuPrimaryTrackCovariance_h
 #define StMuPrimaryTrackCovariance_h
 #include "TObject.h"
-#include "StMatrixF.hh"
+#include "StarClassLibrary/StMatrixF.hh"
 
 class StMuPrimaryTrackCovariance : public TObject {
  public:

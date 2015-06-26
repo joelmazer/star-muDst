@@ -2,7 +2,7 @@
 #ifndef __StMuMcTrack_h__
 #define __StMuMcTrack_h__
 #include "tables/St_g2t_track_Table.h" 
-#include "StThreeVectorF.hh"
+#include "StarClassLibrary/StThreeVectorF.hh"
 class StMuMcTrack : public TObject {
  public:
   enum EHIT {ktpc, ksvt, kssd,

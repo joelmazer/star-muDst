@@ -8,8 +8,8 @@
  */
 
 #include "TObject.h"
-#include "StThreeVectorF.hh"
-#include "StEnumerations.h"
+#include "StarClassLibrary/StThreeVectorF.hh"
+#include "StEvent/StEnumerations.h"
 
 class StPrimaryVertex;
 

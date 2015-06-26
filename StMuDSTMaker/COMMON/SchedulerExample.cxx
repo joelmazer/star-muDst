@@ -7,7 +7,7 @@
 
 #include "SchedulerExample.h"
 
-#include "Stiostream.h"
+#include "St_base/Stiostream.h"
 
 #include "TH1.h"
 #include "TH2.h"

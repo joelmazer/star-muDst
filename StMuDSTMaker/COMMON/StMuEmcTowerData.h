@@ -10,8 +10,8 @@ The StMuEmcCollection uses this.
 #define StMuEmcTowerData__h
  
 #include "TObject.h"
-#include "Stiostream.h"
-#include "StEnumerations.h"
+#include "St_base/Stiostream.h"
+#include "StEvent/StEnumerations.h"
 
 enum {bemc=1, bprs=2, bsmde=3, bsmdp=4, eemc=5, eprs=6, esmdu=7, esmdv=8};
 

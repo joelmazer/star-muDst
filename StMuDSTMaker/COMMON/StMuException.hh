@@ -2,7 +2,7 @@
 #define StMuException_hh
 
 #include <string>
-#include "Stiostream.h"
+#include "St_base/Stiostream.h"
 #include <typeinfo>
 #include "StMuDebug.h"
 

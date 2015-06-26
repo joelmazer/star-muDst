@@ -2,8 +2,8 @@
 #define StMuTofHit_hh
 
 #include <sstream>
-#include "StObject.h"
-#include "StThreeVectorF.hh"
+#include "St_base/StObject.h"
+#include "StarClassLibrary/StThreeVectorF.hh"
 //#include "StarClassLibrary/StParticleDefinition.hh"
 
 //class StTrack;

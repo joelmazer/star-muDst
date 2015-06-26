@@ -6,7 +6,7 @@
  ***************************************************************************/
 
 #include "StMuCut.h"
-#include "Stiostream.h"
+#include "St_base/Stiostream.h"
 
 ClassImp(StMuCut)
 

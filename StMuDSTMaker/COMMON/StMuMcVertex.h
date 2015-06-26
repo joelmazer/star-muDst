@@ -1,7 +1,7 @@
 #ifndef __StMuMcVertex_h__
 #define __StMuMcVertex_h__
 #include "tables/St_g2t_vertex_Table.h" 
-#include "StThreeVectorF.hh"
+#include "StarClassLibrary/StThreeVectorF.hh"
 
 class StMuMcVertex : public TObject {
  public:

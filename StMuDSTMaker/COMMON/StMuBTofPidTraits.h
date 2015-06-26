@@ -32,7 +32,7 @@
 #define StMuBTofPidTraits_hh
 
 class StBTofPidTraits;
-#include "StThreeVectorF.hh"
+#include "StarClassLibrary/StThreeVectorF.hh"
 
 class StMuBTofPidTraits : public TObject {
 public:

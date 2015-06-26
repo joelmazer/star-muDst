@@ -67,7 +67,7 @@ class StMuMtdHit;
 class StMuMtdRawHit;
 class StMuMtdHeader;
 
-#include "StPhysicalHelixD.hh"
+#include "StarClassLibrary/StPhysicalHelixD.hh"
 
 #include "TObject.h"
 #include "StMuArrays.h"

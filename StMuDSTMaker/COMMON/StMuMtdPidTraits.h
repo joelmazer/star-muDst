@@ -1,8 +1,8 @@
 #ifndef StMuMtdPidTraits_hh
 #define StMuMtdPidTraits_hh
 
-#include "StTrackPidTraits.h"
-#include "StThreeVectorF.hh"
+#include "StEvent/StTrackPidTraits.h"
+#include "StarClassLibrary/StThreeVectorF.hh"
 class StMtdPidTraits;
 class StMuMtdHit;
 

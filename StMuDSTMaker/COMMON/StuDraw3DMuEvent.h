@@ -5,7 +5,7 @@
 // *-- Author :    Valery Fine(fine@bnl.gov)   01/09/2009
 
 #include "StDraw3D.h"
-#include "StEnumerations.h"
+#include "StEvent/StEnumerations.h"
 
   
 class StMuTrack;

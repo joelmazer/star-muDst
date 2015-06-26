@@ -20,8 +20,8 @@ Tower id starts from 1 and goes to 4800 to match EMC Id
 #include "StMuEmcCluster.h"
 #include "StMuEmcPoint.h"
 #include "StMuEmcTowerData.h"
-#include "StEnumerations.h"
-#include "Stiostream.h"
+#include "StEvent/StEnumerations.h"
+#include "St_base/Stiostream.h"
 
 //enum {bemc=1, bprs=2, bsmde=3, bsmdp=4, eemc=5, eprs=6, esmdu=7, esmdv=8};
 

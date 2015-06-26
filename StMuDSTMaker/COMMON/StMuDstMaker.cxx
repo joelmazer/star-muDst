@@ -5,7 +5,7 @@
  *
  **************************************************************************/
 #include "TRegexp.h"
-#include "Stiostream.h"
+#include "St_base/Stiostream.h"
 #include "Stsstream.h"
 #include "StChain.h"
 #include "THack.h"

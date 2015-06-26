@@ -17,8 +17,8 @@
 #ifndef StMuFmsHit_hh
 #define StMuFmsHit_hh
 
-#include "Stiostream.h"
-#include "StObject.h"
+#include "St_base/Stiostream.h"
+#include "St_base/StObject.h"
 
 class StMuFmsHit : public StObject {
 public:

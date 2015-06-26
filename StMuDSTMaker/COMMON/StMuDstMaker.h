@@ -12,15 +12,15 @@
 using namespace std;
 #endif
 
-#include "StMaker.h"
-#include "StChain.h"
-#include "StIOInterFace.h"
-#include "St_DataSetIter.h"
+#include "StChain/StMaker.h"
+#include "StChain/StChain.h"
+#include "StChain/StIOInterFace.h"
+#include "Star2Root/St_DataSetIter.h"
 
-#include "StMuArrays.h"
+#include "StMuDSTMaker/COMMON/StMuArrays.h"
 
-#include "StMuFilter.h"
-#include "StMuL3Filter.h"
+#include "StMuDSTMaker/COMMON/StMuFilter.h"
+#include "StMuDSTMaker/COMMON/StMuL3Filter.h"
 
 
 class StMuEvent;

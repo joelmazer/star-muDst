@@ -35,7 +35,7 @@
 #include <string.h>
 
 #include "StMuPmdCollection.h"
-#include "Stiostream.h"
+#include "St_base/Stiostream.h"
 #include "StMuPmdUtil.h"
 #include "StMuPmdCluster.h"
 #include "StMuPmdHit.h"

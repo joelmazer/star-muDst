@@ -21,8 +21,8 @@
 #define StMuBTofHit_hh
 
 #include <sstream>
-#include "StObject.h"
-#include "StThreeVectorF.hh"
+#include "St_base/StObject.h"
+#include "StarClassLibrary/StThreeVectorF.hh"
 
 class StBTofHit;
 #include "StMuDst.h"

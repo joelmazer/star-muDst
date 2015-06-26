@@ -8,9 +8,9 @@
 #ifndef StMuFilter_h
 #define StMuFilter_h
 
-#include "StMuCut.h"
+#include "StMuDSTMaker/COMMON/StMuCut.h"
 #include "StEvent/StEnumerations.h"
-#include "StTrackMethod.h"
+#include "StEvent/StTrackMethod.h"
 
 #include <list>
 #if !defined(ST_NO_NAMESPACES)
