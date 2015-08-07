@@ -14,7 +14,7 @@
  * Added FMS and Roman pot arrays
  *
  **************************************************************************/
-#include "StMuFmsHit.h"
+#include "StMuDSTMaker/COMMON/StMuFmsHit.h"
 
 ClassImp(StMuFmsHit)
 

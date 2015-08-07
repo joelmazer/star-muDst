@@ -5,7 +5,7 @@
  *
  ***************************************************************************/
 
-#include "StMuFilter.h"
+#include "StMuDSTMaker/COMMON/StMuFilter.h"
 #include "StEvent/StTrack.h"
 #include "StEvent/StTrackGeometry.h"
 #include "StEvent/StTrackDetectorInfo.h"

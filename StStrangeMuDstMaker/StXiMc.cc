@@ -20,7 +20,7 @@
  * Description: Monte Carlo Xi micro dst class
  *
  ***********************************************************************/
-#include "StXiMc.hh"
+#include "StStrangeMuDstMaker/StXiMc.hh"
 
 ClassImp(StXiMc)
 

@@ -16,14 +16,14 @@
 #ifndef StMuTrack_h
 #define StMuTrack_h
 
-#include "StMuDst.h"
-#include "StMuEvent.h"
-#include "StMuHelix.h"
-#include "StMuUtilities.h"
-#include "StMuProbPidTraits.h"
-#include "StMuBTofPidTraits.h" /// dongx
-#include "StMuMtdPidTraits.h" /// Bingchu
-#include "StMuPrimaryTrackCovariance.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
+#include "StMuDSTMaker/COMMON/StMuHelix.h"
+#include "StMuDSTMaker/COMMON/StMuUtilities.h"
+#include "StMuDSTMaker/COMMON/StMuProbPidTraits.h"
+#include "StMuDSTMaker/COMMON/StMuBTofPidTraits.h" /// dongx
+#include "StMuDSTMaker/COMMON/StMuMtdPidTraits.h" /// Bingchu
+#include "StMuDSTMaker/COMMON/StMuPrimaryTrackCovariance.h"
 
 
 #include "StEvent/StTrackTopologyMap.h"

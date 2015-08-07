@@ -13,7 +13,7 @@ EmcDet is defined as follow:
  
 #include "TObject.h"
 #include "TObjArray.h"
-#include "StEmcMicroCluster.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroCluster.h"
 
 class StEmcMicroPoint: public TObject
 {

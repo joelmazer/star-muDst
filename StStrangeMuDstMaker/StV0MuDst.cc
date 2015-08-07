@@ -47,13 +47,13 @@
  *
  *
  ***********************************************************************/
-#include "phys_constants.h"
-#include "StV0MuDst.hh"
-#include "StTrack.h"
-#include "StTrackFitTraits.h"
-#include "StV0Vertex.h"
-#include "StStrangeEvMuDst.hh"
-#include "StDedxPidTraits.h"
+#include "StHbtMaker/doc/Make/phys_constants.h"
+#include "StStrangeMuDstMaker/StV0MuDst.hh"
+#include "StEvent/StTrack.h"
+#include "StEvent/StTrackFitTraits.h"
+#include "StEvent/StV0Vertex.h"
+#include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
+#include "StEvent/StDedxPidTraits.h"
 #include "TMath.h"
 ClassImp(StV0MuDst)
 

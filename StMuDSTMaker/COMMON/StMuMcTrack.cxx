@@ -1,5 +1,5 @@
 // $Id: StMuMcTrack.cxx,v 1.4 2014/08/06 19:19:02 perev Exp $
-#include "StMuMcTrack.h"
+#include "StMuDSTMaker/COMMON/StMuMcTrack.h"
 #include "St_base/Stiostream.h"
 #include "TString.h"
 #include "TMath.h"

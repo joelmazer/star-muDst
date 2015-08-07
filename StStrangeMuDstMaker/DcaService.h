@@ -10,8 +10,8 @@
 #define STAR_DcaService
 
 #include "StarClassLibrary/StHelixD.hh"
-#include "StStrangeMuDstMaker.h"
-#include "StStrangeEvMuDst.hh"
+#include "StStrangeMuDstMaker/StStrangeMuDstMaker.h"
+#include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
 
 class StXiMuDst;
 class StV0MuDst;

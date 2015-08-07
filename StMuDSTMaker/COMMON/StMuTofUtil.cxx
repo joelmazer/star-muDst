@@ -1,8 +1,8 @@
-#include "StEvent.h"
-#include "StTrack.h"
-#include "StTofCollection.h"
-#include "StMuTofUtil.h"
-#include "StMuTofHitCollection.h"
+#include "StEvent/StEvent.h"
+#include "StEvent/StTrack.h"
+#include "StEvent/StTofCollection.h"
+#include "StMuDSTMaker/COMMON/StMuTofUtil.h"
+#include "StMuDSTMaker/COMMON/StMuTofHitCollection.h"
 
 ClassImp(StMuTofUtil)
 

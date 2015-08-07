@@ -9,11 +9,11 @@
 
 #ifndef StXiMuDst_hh
 #define StXiMuDst_hh
-#include "StV0MuDst.hh"
-#include "StXiI.hh"
+#include "StStrangeMuDstMaker/StV0MuDst.hh"
+#include "StStrangeMuDstMaker/StXiI.hh"
 
 class StXiVertex;
-#include "StPhysicalHelixD.hh"
+#include "StarClassLibrary/StPhysicalHelixD.hh"
 
 class StXiMuDst : public StV0MuDst, public virtual StXiI {
   friend class StMuMomentumShiftMaker;

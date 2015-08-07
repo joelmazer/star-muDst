@@ -5,7 +5,7 @@
  *
  ***********************************************************************/
 
-#include "StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
 ClassImp(StMuDebug)
 
 /// default debug level is 0 

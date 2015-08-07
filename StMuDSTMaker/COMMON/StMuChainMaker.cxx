@@ -6,20 +6,20 @@
  **************************************************************************/
 #include <fstream>
 
-#include "StMuException.hh"
-#include "StMuDebug.h"
-#include "StMuChainMaker.h"
-#include "StMuDbReader.h"
-#include "StMuTimer.h"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuChainMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDbReader.h"
+#include "StMuDSTMaker/COMMON/StMuTimer.h"
 
-#include "StMaker.h"
-#include "StChain.h"
+#include "StChain/StMaker.h"
+#include "StChain/StChain.h"
 
 #include "TFile.h"
 #include "TTree.h"
 #include "TChain.h"
 #include "TSystem.h"
-#include "StMessMgr.h"
+#include "St_base/StMessMgr.h"
 
 extern TSystem* gSystem;
 

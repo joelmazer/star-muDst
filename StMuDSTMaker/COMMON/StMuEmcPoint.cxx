@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StMuEmcPoint.h"
+#include "StMuDSTMaker/COMMON/StMuEmcPoint.h"
 #include "TString.h"
 ClassImp(StMuEmcPoint)
 

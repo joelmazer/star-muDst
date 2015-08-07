@@ -58,17 +58,17 @@
  *
  *
  ***********************************************************************/
-#include "StKinkMuDst.hh"
-#include "StKinkVertex.h"
-#include "StTrack.h"
-#include "StTrackGeometry.h"
-#include "StTrackNode.h"
-#include "StTrackFitTraits.h"
-#include "StDedxPidTraits.h"
-#include "StMessMgr.h"
+#include "StStrangeMuDstMaker/StKinkMuDst.hh"
+#include "StEvent/StKinkVertex.h"
+#include "StEvent/StTrack.h"
+#include "StEvent/StTrackGeometry.h"
+#include "StEvent/StTrackNode.h"
+#include "StEvent/StTrackFitTraits.h"
+#include "StEvent/StDedxPidTraits.h"
+#include "St_base/StMessMgr.h"
 
 #include <stdlib.h>
-#include "phys_constants.h"
+#include "StHbtMaker/doc/Make/phys_constants.h"
 
 ClassImp(StKinkBase)
 ClassImp(StKinkMuDst)

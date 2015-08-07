@@ -17,12 +17,12 @@
  *
  *
  ****************************************************************/
-#include "StEvent.h"
-#include "StTrack.h"
-#include "StBTofCollection.h"
-#include "StBTofHit.h"
-#include "StMuBTofUtil.h"
-#include "StMuBTofHitCollection.h"
+#include "StEvent/StEvent.h"
+#include "StEvent/StTrack.h"
+#include "StEvent/StBTofCollection.h"
+#include "StEvent/StBTofHit.h"
+#include "StMuDSTMaker/COMMON/StMuBTofUtil.h"
+#include "StMuDSTMaker/COMMON/StMuBTofHitCollection.h"
 
 ClassImp(StMuBTofUtil)
 

@@ -12,7 +12,7 @@
 #ifndef StXiI_hh
 #define StXiI_hh
 
-#include "StV0I.hh"
+#include "StStrangeMuDstMaker/StV0I.hh"
 static const Float_t M_OMEGA_2 = ::pow(M_OMEGA_MINUS,2);
 static const Float_t M_XI_2 = ::pow(M_XI_MINUS,2);
 static const Float_t M_KAON_MINUS_2 = ::pow(M_KAON_MINUS,2);

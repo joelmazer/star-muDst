@@ -7,7 +7,7 @@
 #include <TArrayC.h>
 #include <TObjArray.h>
 
-#include "EztTrigBlob.h"
+#include "StMuDSTMaker/EZTREE/EztTrigBlob.h"
 ClassImp(EztTrigBlob)
 
 

@@ -25,10 +25,10 @@
 #include "StEvent/StL3AlgorithmInfo.h"
 #include "StEvent/StPrimaryVertex.h"
 
-#include "StMuEvent.h"
-#include "StMuL3EventSummary.h"
-#include "StMuException.hh"
-#include "StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
+#include "StMuDSTMaker/COMMON/StMuL3EventSummary.h"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
 
 ClassImp(StMuL3EventSummary)
 

@@ -3,19 +3,19 @@
 // StStrangeMuDstMaker strangeness micro DST maker                      //
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
-#include "StStrangeMuDstMaker.h"
+#include "StStrangeMuDstMaker/StStrangeMuDstMaker.h"
 #include "TFile.h"
 #include "TChain.h"
-#include "THack.h"
-#include "StTree.h"
+#include "StarRoot/THack.h"
+#include "St_base/StTree.h"
 #include "StEvent/StEvent.h"
-#include "StEvent.h"
-#include "StStrangeEvMuDst.hh"
-#include "StStrangeCuts.hh"
-#include "StMcEventTypes.hh"
-#include "StParticleDefinition.hh"
-#include "StMessMgr.h"
-#include "StuJitterBug.hh"
+#include "StEvent/StEvent.h"
+#include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
+#include "StStrangeMuDstMaker/StStrangeCuts.hh"
+#include "StMcEvent/StMcEventTypes.hh"
+#include "StarClassLibrary/StParticleDefinition.hh"
+#include "St_base/StMessMgr.h"
+#include "StEventUtilities/StuJitterBug.hh"
 
 // Set maximum file size to 1.9 GB (Root has a 2GB limit)
 #define MAXFILESIZE 1900000000

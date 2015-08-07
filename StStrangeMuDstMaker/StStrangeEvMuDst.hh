@@ -9,7 +9,7 @@
 
 #ifndef StStrangeEvMuDst_hh
 #define StStrangeEvMuDst_hh
-#include "StStrangeMuDst.hh"
+#include "StStrangeMuDstMaker/StStrangeMuDst.hh"
 #include "TMath.h"
 #include "stdlib.h"
 

@@ -14,12 +14,12 @@
  * Added FMS and Roman pot arrays
  *
  **************************************************************************/
-#include "StMuFmsHit.h"
-#include "StMuFmsUtil.h"
-#include "StMuFmsCollection.h"
-#include "StEvent.h"
-#include "StMessMgr.h"
-#include "StEventTypes.h"
+#include "StMuDSTMaker/COMMON/StMuFmsHit.h"
+#include "StMuDSTMaker/COMMON/StMuFmsUtil.h"
+#include "StMuDSTMaker/COMMON/StMuFmsCollection.h"
+#include "StEvent/StEvent.h"
+#include "St_base/StMessMgr.h"
+#include "StEvent/StEventTypes.h"
 
 ClassImp(StMuFmsUtil)
 

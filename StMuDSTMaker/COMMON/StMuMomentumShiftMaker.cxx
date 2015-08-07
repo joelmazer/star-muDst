@@ -8,21 +8,21 @@
  * was wrong. It was used for the SL04k year-4 HalfField productions.
  * 
  ***************************************************************************/
-#include "StMuMomentumShiftMaker.h"
-#include "StMuDstMaker.h"
-#include "StMuDst.h"
-#include "StMuEvent.h"
-#include "StMuTrack.h"
+#include "StMuDSTMaker/COMMON/StMuMomentumShiftMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDstMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
+#include "StMuDSTMaker/COMMON/StMuTrack.h"
 #include "StEvent/StRunInfo.h"
 #ifndef __NO_STRANGE_MUDST__
 #include "StStrangeMuDstMaker/StKinkMuDst.hh"
 #include "StStrangeMuDstMaker/StV0MuDst.hh"
 #include "StStrangeMuDstMaker/StXiMuDst.hh"
 #include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
-#include "StMessMgr.h"
+#include "St_base/StMessMgr.h"
 #endif
 #include "TChain.h"
-#include "THack.h"
+#include "StarRoot/THack.h"
 #include "TFile.h"
 
 ClassImp(StMuMomentumShiftMaker)

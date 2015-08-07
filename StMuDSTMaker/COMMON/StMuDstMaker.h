@@ -53,15 +53,15 @@ class StStrangeAssoc;
 class StStrangeCuts;
 #endif
 /// emc stuff
-#include "StMuEmcCollection.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCollection.h"
 class StMuEmcUtil;
 
 /// fms stuff
-#include "StMuFmsCollection.h"
+#include "StMuDSTMaker/COMMON/StMuFmsCollection.h"
 class StMuFmsUtil;
 
 /// PMD by Supriya Das
-#include "StMuPmdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuPmdCollection.h"
 class StMuPmdUtil;
 
 // tof stuff

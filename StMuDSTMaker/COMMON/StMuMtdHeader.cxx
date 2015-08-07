@@ -1,4 +1,4 @@
-#include "StMuMtdHeader.h"
+#include "StMuDSTMaker/COMMON/StMuMtdHeader.h"
 #include "StEvent/StEvent.h"
 #include "StEvent/StMtdHeader.h"
 

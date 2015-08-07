@@ -8,7 +8,7 @@ This is the EMC micro cluster object.
  
 #include "TObject.h"
 #include "TObjArray.h"
-#include "StEmcMicroHit.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroHit.h"
 
 class StEmcMicroCluster: public TObject
 {

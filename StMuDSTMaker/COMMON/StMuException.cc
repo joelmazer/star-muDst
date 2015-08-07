@@ -1,2 +1,2 @@
-#include "StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
 

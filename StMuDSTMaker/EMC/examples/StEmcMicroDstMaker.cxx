@@ -1,13 +1,13 @@
-#include "StEmcMicroDstMaker.h"
-#include "StEvent.h"
-#include "StEventTypes.h"
-#include "StEmcMicroEvent.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroDstMaker.h"
+#include "StEvent/StEvent.h"
+#include "StEvent/StEventTypes.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroEvent.h"
 #include "StIOMaker/StIOMaker.h"
 #include "StEmcUtil/filters/StEmcFilter.h"
-#include "StEmcMicroUtil.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroUtil.h"
 #include "StChain/StEvtHddr.h"
 #include "StTreeMaker/StTreeMaker.h"
-#include "StTree.h"
+#include "St_base/StTree.h"
 
 ClassImp(StEmcMicroDstMaker);
 /*! Default constructor

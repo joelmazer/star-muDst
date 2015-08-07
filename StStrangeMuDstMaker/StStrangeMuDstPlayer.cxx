@@ -1,4 +1,4 @@
-#include "StChain.h"
+#include "StChain/StChain.h"
 #include "StIOMaker/StIOMaker.h"
 #include "StEventMaker/StEventMaker.h"
 #include "StStrangeMuDstMaker/StStrangeMuDstMaker.h"
@@ -7,8 +7,8 @@
 #include "StStrangeMuDstMaker/StKinkMuDst.hh"
 #include "StStrangeMuDstMaker/StStrangeCuts.hh"
 #include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
-#include "StStrangeMuDstPlayer.h"
-#include "StMessMgr.h"
+#include "StStrangeMuDstMaker/StStrangeMuDstPlayer.h"
+#include "St_base/StMessMgr.h"
 #include "StMcEventMaker/StMcEventMaker.h"
 #include "StAssociationMaker/StAssociationMaker.h"
 // #include "StHbtMaker/StRandyTopMapMaker.h" // RWitt: Commented 7/24/15 to remove dependency on StHbtMaker

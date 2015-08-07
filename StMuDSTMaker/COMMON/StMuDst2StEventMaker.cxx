@@ -3,7 +3,7 @@
  * $Id: StMuDst2StEventMaker.cxx,v 1.13 2007/05/16 18:50:49 mvl Exp $
  * Author: Frank Laue, BNL, laue@bnl.gov
  ***************************************************************************/
-#include "StMuDst2StEventMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDst2StEventMaker.h"
 
 #include "StMuDSTMaker/COMMON/StMuDstMaker.h"
 #include "StMuDSTMaker/COMMON/StMuDst.h"

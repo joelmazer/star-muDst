@@ -8,7 +8,7 @@
 #ifndef StMuL3Filter_h
 #define StMuL3Filter_h
 
-#include "StMuCut.h"
+#include "StMuDSTMaker/COMMON/StMuCut.h"
 
 class BetheBloch;
   

@@ -15,12 +15,12 @@
 using namespace std;
 #endif
 
-#include "StMuDstMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDstMaker.h"
 
 class StMuDst;
 
 /// pmd stuff
-//#include "StMuPmdCollection.h"
+//#include "StMuDSTMaker/COMMON/StMuPmdCollection.h"
 class StMuEmcUtil;
 class StMuPmdUtil;
 class StMuTofUtil;

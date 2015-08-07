@@ -50,11 +50,11 @@
  *
  *
  ***********************************************************************/
-#include "StStrangeEvMuDst.hh"
-#include "StEventTypes.h"
-#include "StMcEventTypes.hh"
-#include "StuRefMult.hh"
-#include "StMessMgr.h"
+#include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
+#include "StEvent/StEventTypes.h"
+#include "StMcEvent/StMcEventTypes.hh"
+#include "StEventUtilities/StuRefMult.hh"
+#include "St_base/StMessMgr.h"
 #include "TArrayF.h"
 
 

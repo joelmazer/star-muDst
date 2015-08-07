@@ -17,8 +17,8 @@
  * Added FMS and Roman pot arrays
  *
  **************************************************************************/
-#include "StMuFmsCollection.h"
-#include "StMuFmsHit.h"
+#include "StMuDSTMaker/COMMON/StMuFmsCollection.h"
+#include "StMuDSTMaker/COMMON/StMuFmsHit.h"
 
 static const char rcsid[] = "$Id: StMuFmsCollection.cxx,v 1.2 2012/11/26 23:14:33 fisyak Exp $";
 

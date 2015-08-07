@@ -43,8 +43,8 @@
  *
  **************************************************************************/
 
-#include "StMuFgtStrip.h"
-#include "StRoot/StEvent/StFgtStrip.h"
+#include "StMuDSTMaker/COMMON/StMuFgtStrip.h"
+#include "StEvent/StFgtStrip.h"
 #include "StFgtUtil/StFgtConsts.h"
 #include <assert.h>
 

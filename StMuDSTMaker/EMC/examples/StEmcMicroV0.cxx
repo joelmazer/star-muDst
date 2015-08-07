@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroV0.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroV0.h"
 
 ClassImp(StEmcMicroV0);
 

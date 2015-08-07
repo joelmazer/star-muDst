@@ -44,15 +44,15 @@
  *
  *
  ***********************************************************************/
-#include "StXiMuDst.hh"
-#include "StXiVertex.h"
-#include "StTrack.h"
-#include "StTrackFitTraits.h"
-#include "StStrangeEvMuDst.hh"
-#include "StDedxPidTraits.h"
-#include "phys_constants.h"
-#include "SystemOfUnits.h"
-#include "StPhysicalHelixD.hh"
+#include "StStrangeMuDstMaker/StXiMuDst.hh"
+#include "StEvent/StXiVertex.h"
+#include "StEvent/StTrack.h"
+#include "StEvent/StTrackFitTraits.h"
+#include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
+#include "StEvent/StDedxPidTraits.h"
+#include "StHbtMaker/doc/Make/phys_constants.h"
+#include "StarClassLibrary/SystemOfUnits.h"
+#include "StarClassLibrary/StPhysicalHelixD.hh"
 
 StPhysicalHelixD XiHelix;
 StThreeVectorD temp3VD;

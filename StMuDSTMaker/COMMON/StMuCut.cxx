@@ -5,7 +5,7 @@
  *
  ***************************************************************************/
 
-#include "StMuCut.h"
+#include "StMuDSTMaker/COMMON/StMuCut.h"
 #include "St_base/Stiostream.h"
 
 ClassImp(StMuCut)

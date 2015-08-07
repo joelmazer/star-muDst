@@ -1,4 +1,4 @@
-#include "StMuMtdRawHit.h"
+#include "StMuDSTMaker/COMMON/StMuMtdRawHit.h"
 #include "StEvent/StEvent.h"
 #include "StEvent/StMtdHit.h"
 #include "StEvent/StMtdRawHit.h"

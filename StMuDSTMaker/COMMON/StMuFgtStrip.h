@@ -63,7 +63,7 @@
 #define _ST_MU_FGT_STRIP_H_
 
 #include <TObject.h>
-#include "StRoot/StFgtUtil/StFgtConsts.h"
+#include "StFgtUtil/StFgtConsts.h"
 
 class StFgtStrip;
 

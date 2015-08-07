@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StMuEmcCluster.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCluster.h"
 
 ClassImp(StMuEmcCluster)
 

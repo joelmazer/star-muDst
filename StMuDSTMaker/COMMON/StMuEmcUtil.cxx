@@ -1,11 +1,11 @@
-#include "StMuEmcUtil.h"
-#include "StEvent.h"
-#include "StMessMgr.h"
-#include "StEventTypes.h"
-#include "StMuEmcCollection.h"
-#include "SystemOfUnits.h"
+#include "StMuDSTMaker/COMMON/StMuEmcUtil.h"
+#include "StEvent/StEvent.h"
+#include "St_base/StMessMgr.h"
+#include "StEvent/StEventTypes.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCollection.h"
+#include "StarClassLibrary/SystemOfUnits.h"
 #include "StEmcUtil/geometry/StEmcGeom.h"
-#include "StMuEmcTowerData.h"
+#include "StMuDSTMaker/COMMON/StMuEmcTowerData.h"
 
 ClassImp(StMuEmcUtil)
 

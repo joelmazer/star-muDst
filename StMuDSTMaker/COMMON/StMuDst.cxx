@@ -7,9 +7,9 @@
 
 #include <map>
 
-#include "StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
 
-#include "StContainers.h"
+#include "StEvent/StContainers.h"
 #include "StEvent/StEventTypes.h"
 #include "StEvent/StTriggerData.h"
 #include "StEvent/StTriggerData2003.h"
@@ -20,24 +20,24 @@
 #include "StEvent/StTriggerData2009.h"
 
 #include "StarClassLibrary/StTimer.hh"
-#include "StMuDstMaker.h"
-#include "StMuEvent.h"
-#include "StMuPrimaryVertex.h"
-#include "StMuRpsCollection.h"
-#include "StMuMtdCollection.h"
-#include "StMuTrack.h"
-#include "StMuDebug.h"
-#include "StMuEmcUtil.h"
-#include "StMuFmsUtil.h"
-#include "StMuPmdUtil.h"
+#include "StMuDSTMaker/COMMON/StMuDstMaker.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
+#include "StMuDSTMaker/COMMON/StMuPrimaryVertex.h"
+#include "StMuDSTMaker/COMMON/StMuRpsCollection.h"
+#include "StMuDSTMaker/COMMON/StMuMtdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuTrack.h"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuEmcUtil.h"
+#include "StMuDSTMaker/COMMON/StMuFmsUtil.h"
+#include "StMuDSTMaker/COMMON/StMuPmdUtil.h"
 ///dongx
-#include "StBTofCollection.h"
-#include "StBTofRawHit.h"
-#include "StBTofHeader.h"
-#include "StBTofPidTraits.h"
-#include "StMuBTofHit.h"
-#include "StMuMtdHit.h"
-#include "StMuMtdHeader.h"
+#include "StEvent/StBTofCollection.h"
+#include "StEvent/StBTofRawHit.h"
+#include "StEvent/StBTofHeader.h"
+#include "StEvent/StBTofPidTraits.h"
+#include "StMuDSTMaker/COMMON/StMuBTofHit.h"
+#include "StMuDSTMaker/COMMON/StMuMtdHit.h"
+#include "StMuDSTMaker/COMMON/StMuMtdHeader.h"
 #include "TClonesArray.h"
 #include "TTree.h"
 #ifndef __NO_STRANGE_MUDST__
@@ -49,8 +49,8 @@ TClonesArray** StMuDst::arrays       = 0;
 #ifndef __NO_STRANGE_MUDST__
 TClonesArray** StMuDst::strangeArrays= 0;
 #endif
-#include "StMuMcVertex.h"
-#include "StMuMcTrack.h"
+#include "StMuDSTMaker/COMMON/StMuMcVertex.h"
+#include "StMuDSTMaker/COMMON/StMuMcTrack.h"
 TClonesArray** StMuDst::mcArrays= 0;
 TClonesArray** StMuDst::emcArrays    = 0;
 TClonesArray** StMuDst::fmsArrays    = 0;

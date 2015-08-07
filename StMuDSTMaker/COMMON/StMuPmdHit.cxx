@@ -14,7 +14,7 @@
  *
  * ****************************************************************/
 
-#include "StMuPmdHit.h"
+#include "StMuDSTMaker/COMMON/StMuPmdHit.h"
 
 ClassImp(StMuPmdHit)
 

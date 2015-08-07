@@ -5,9 +5,9 @@
  *
  ***************************************************************************/
 
-#include "StMuL3Filter.h"
-#include "StMuDebug.h"
-#include "StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuL3Filter.h"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
 #include "StEvent/StTrack.h"
 #include "StEvent/StTrackGeometry.h"
 #include "StEvent/StTrackDetectorInfo.h"

@@ -12,7 +12,7 @@
 #ifndef StTriggerDataMother_hh
 #define StTriggerDataMother_hh
 
-#include "StTriggerData.h"
+#include "StEvent/StTriggerData.h"
 
 class EztTrigBlob;
 class StTriggerDataMother : public StTriggerData {

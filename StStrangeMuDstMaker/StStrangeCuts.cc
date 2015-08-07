@@ -44,8 +44,8 @@
 #include "TDataType.h"
 #include "TString.h"
 #include "TClonesArray.h"
-#include "StStrangeCuts.hh"
-#include "StMessMgr.h"
+#include "StStrangeMuDstMaker/StStrangeCuts.hh"
+#include "St_base/StMessMgr.h"
 
 static const TCut unknownCut("NO or UNKNOWN cuts!","");
 

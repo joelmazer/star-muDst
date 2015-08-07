@@ -24,7 +24,7 @@ detailed explanation how these filters work, check StEmcFilter documentation.
 */
 #ifndef StEmcMicroDstMaker_h
 #define StEmcMicroDstMaker_h
-#include "StMaker.h"
+#include "StChain/StMaker.h"
 #include "TH1.h"
 #include "TFile.h"
 #include "TTree.h"

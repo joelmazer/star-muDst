@@ -28,7 +28,7 @@ using std::copy;
 #endif
 
 
-#include "StMuTofHit.h"
+#include "StMuDSTMaker/COMMON/StMuTofHit.h"
 
 #ifndef ST_NO_DEF_TEMPLATE_ARGS
 typedef vector<StMuTofHit*> hitVector;

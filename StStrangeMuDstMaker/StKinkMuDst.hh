@@ -9,7 +9,7 @@
 
 #ifndef  STAR_StKinkMuDst
 #define  STAR_StKinkMuDst
-#include "StKinkBase.hh"
+#include "StStrangeMuDstMaker/StKinkBase.hh"
 
 class StKinkVertex;
 

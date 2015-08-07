@@ -3,7 +3,7 @@
  * $Id: StAddRunInfoMaker.cxx,v 1.2 2003/09/07 03:49:03 perev Exp $
  * Author: Frank Laue, BNL, laue@bnl.gov
  ***************************************************************************/
-#include "StAddRunInfoMaker.h"
+#include "StMuDSTMaker/COMMON/StAddRunInfoMaker.h"
 
 #include "StEvent/StEvent.h"
 #include "StEvent/StRunInfo.h"

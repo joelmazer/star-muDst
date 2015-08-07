@@ -66,12 +66,12 @@
 // StStrangeControllerBase strangeness micro DST controller base class  //
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
-#include "StStrangeControllerInclude.h"
-#include "StStrangeMuDst.hh"
+#include "StStrangeMuDstMaker/StStrangeControllerInclude.h"
+#include "StStrangeMuDstMaker/StStrangeMuDst.hh"
 #include "TROOT.h"
 #include "TTree.h"
 #include "TBranch.h"
-#include "THack.h"
+#include "StarRoot/THack.h"
 
 StStrangeMuDstMaker* StStrangeControllerBase::currentMaker = 0;
 

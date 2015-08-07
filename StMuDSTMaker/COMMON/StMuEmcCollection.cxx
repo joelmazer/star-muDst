@@ -7,9 +7,9 @@
 //########################################################### 
 #include <string.h>
 
-#include "StMuEmcCollection.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCollection.h"
 #include "St_base/Stiostream.h"
-#include "StMuEmcUtil.h"
+#include "StMuDSTMaker/COMMON/StMuEmcUtil.h"
 static StMuEmcUtil util; // to ease decoding of EEMC hits
 ClassImp(StMuEmcCollection)
 

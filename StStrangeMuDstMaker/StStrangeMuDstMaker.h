@@ -10,9 +10,9 @@
 
 #ifndef STAR_StStrangeMuDstMaker
 #define STAR_StStrangeMuDstMaker
-#include "StMaker.h"
+#include "StChain/StMaker.h"
 #include "TClonesArray.h"
-#include "StStrangeControllerBase.h"
+#include "StStrangeMuDstMaker/StStrangeControllerBase.h"
 
 class TFile;
 class TTree;

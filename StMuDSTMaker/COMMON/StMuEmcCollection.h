@@ -16,10 +16,10 @@ Tower id starts from 1 and goes to 4800 to match EMC Id
  
 #include "TObject.h"
 #include "TClonesArray.h"
-#include "StMuEmcHit.h"
-#include "StMuEmcCluster.h"
-#include "StMuEmcPoint.h"
-#include "StMuEmcTowerData.h"
+#include "StMuDSTMaker/COMMON/StMuEmcHit.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCluster.h"
+#include "StMuDSTMaker/COMMON/StMuEmcPoint.h"
+#include "StMuDSTMaker/COMMON/StMuEmcTowerData.h"
 #include "StEvent/StEnumerations.h"
 #include "St_base/Stiostream.h"
 

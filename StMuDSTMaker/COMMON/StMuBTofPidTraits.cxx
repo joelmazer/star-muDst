@@ -18,8 +18,8 @@
  *
  *
  ***************************************************************************/
-#include "StBTofPidTraits.h"
-#include "StMuBTofPidTraits.h"
+#include "StEvent/StBTofPidTraits.h"
+#include "StMuDSTMaker/COMMON/StMuBTofPidTraits.h"
 
 static const char rcsid[] = "$Id: StMuBTofPidTraits.cxx,v 1.2 2009/12/08 23:24:46 fine Exp $";
 

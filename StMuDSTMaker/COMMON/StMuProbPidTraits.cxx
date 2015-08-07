@@ -5,7 +5,7 @@
  *
  ***************************************************************************/
 
-#include "StMuProbPidTraits.h"
+#include "StMuDSTMaker/COMMON/StMuProbPidTraits.h"
 
 ClassImp(StMuProbPidTraits) ;
 

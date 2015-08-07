@@ -1,7 +1,7 @@
-#include "StMuPrimaryTrackCovariance.h"
+#include "StMuDSTMaker/COMMON/StMuPrimaryTrackCovariance.h"
 #include "TMath.h"
 #include "St_base/Stiostream.h"
-#include "TRSymMatrix.h"
+#include "StarRoot/TRSymMatrix.h"
 ClassImp(StMuPrimaryTrackCovariance);
 StMuPrimaryTrackCovariance::StMuPrimaryTrackCovariance() {memset(mBeg,0,mEnd-mBeg+1);}
 StMuPrimaryTrackCovariance::StMuPrimaryTrackCovariance(StMatrixF cov) {

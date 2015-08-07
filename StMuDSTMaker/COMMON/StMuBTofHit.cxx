@@ -16,9 +16,9 @@
  *
  *
  ***************************************************************************/
-#include "StTrack.h"
-#include "StBTofHit.h"
-#include "StMuBTofHit.h"
+#include "StEvent/StTrack.h"
+#include "StEvent/StBTofHit.h"
+#include "StMuDSTMaker/COMMON/StMuBTofHit.h"
 
 ClassImp(StMuBTofHit)
 

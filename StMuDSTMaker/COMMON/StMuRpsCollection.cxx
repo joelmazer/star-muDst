@@ -1,4 +1,4 @@
-#include "StMuRpsCollection.h"
+#include "StMuDSTMaker/COMMON/StMuRpsCollection.h"
 #include "StEvent/StRpsCollection.h"
 #include "StEvent/StRpsRomanPot.h"
 #include "StEvent/StRpsPlane.h"

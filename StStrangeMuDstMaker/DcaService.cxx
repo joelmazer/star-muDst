@@ -6,15 +6,15 @@
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
 
-#include "DcaService.h"
-#include "StXiMuDst.hh"
+#include "StStrangeMuDstMaker/DcaService.h"
+#include "StStrangeMuDstMaker/StXiMuDst.hh"
 #include "TMath.h"
 #include "TDataMember.h"
 #include "TRealData.h"
-#include "phys_constants.h"
-#include "math_constants.h"
+#include "StHbtMaker/doc/Make/phys_constants.h"
+#include "StHbtMaker/doc/Make/math_constants.h"
 #include "TClass.h"
-#include "StMessMgr.h"
+#include "St_base/StMessMgr.h"
 #include <cassert>
 
 Long_t GGetOffset(TClass* cl, TDataMember* that);

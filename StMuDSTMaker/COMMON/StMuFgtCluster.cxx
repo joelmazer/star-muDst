@@ -27,8 +27,8 @@
  *
  **************************************************************************/
 
-#include "StMuFgtCluster.h"
-#include "StRoot/StEvent/StFgtHit.h"
+#include "StMuDSTMaker/COMMON/StMuFgtCluster.h"
+#include "StEvent/StFgtHit.h"
 
 // constructor
 StMuFgtCluster::StMuFgtCluster( Int_t centralStripGeoId, Int_t firstStripAssociationIdx, Int_t maxTimeBin, Int_t maxAdc,Int_t numStrips,  Float_t charge, Float_t chargeUncert, Float_t r, Float_t errR, Float_t phi, Float_t errPhi, Float_t evenOddChargeAsy ) :

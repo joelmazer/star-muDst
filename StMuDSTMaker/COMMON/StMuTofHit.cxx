@@ -1,6 +1,6 @@
-#include "StMuTofHit.h"
-//#include "StTrack.h"
-//#include "StParticleDefinition.hh"
+#include "StMuDSTMaker/COMMON/StMuTofHit.h"
+//#include "StEvent/StTrack.h"
+//#include "StarClassLibrary/StParticleDefinition.hh"
 
 ClassImp(StMuTofHit)
 

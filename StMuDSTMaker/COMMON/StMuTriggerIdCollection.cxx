@@ -8,7 +8,7 @@
  * Description:
  *
  ***************************************************************************/
-#include "StMuTriggerIdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuTriggerIdCollection.h"
 
 ClassImp(StMuTriggerIdCollection)
 

@@ -20,10 +20,10 @@
  * Description: Monte Carlo Kink micro dst class
  *
  ***********************************************************************/
-#include "StKinkMc.hh"
-#include "StMcVertex.hh"
-#include "StMcTrack.hh"
-#include "StDecayMode.hh"                                                       
+#include "StStrangeMuDstMaker/StKinkMc.hh"
+#include "StMcEvent/StMcVertex.hh"
+#include "StMcEvent/StMcTrack.hh"
+#include "StStrangeMuDstMaker/StDecayMode.hh"                                                       
 
 ClassImp(StKinkMc)
 

@@ -17,9 +17,9 @@
  * Description: Strangeness micro dst base class
  *
  ***********************************************************************/
-#include "StStrangeMuDst.hh"
+#include "StStrangeMuDstMaker/StStrangeMuDst.hh"
 #include "TClass.h"
-#include "StObject.h"
+#include "St_base/StObject.h"
 #include "TStreamerInfo.h"
 
 ClassImp(StStrangeMuDst)

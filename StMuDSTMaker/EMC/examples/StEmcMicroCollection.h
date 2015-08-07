@@ -15,9 +15,9 @@ Hit id, cluster id and point id starts from zero.
  
 #include "TObject.h"
 #include "TObjArray.h"
-#include "StEmcMicroHit.h"
-#include "StEmcMicroCluster.h"
-#include "StEmcMicroPoint.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroHit.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroCluster.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroPoint.h"
 
 class StEmcMicroCollection: public TObject
 {

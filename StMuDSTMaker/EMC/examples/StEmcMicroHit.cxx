@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroHit.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroHit.h"
 
 ClassImp(StEmcMicroHit);
 

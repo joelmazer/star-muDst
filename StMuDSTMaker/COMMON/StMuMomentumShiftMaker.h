@@ -6,8 +6,8 @@
 #ifndef __StMuMomentumShiftmaker_hh__
 #define __StMuMomentumShiftmaker_hh__
 
-//#include "StMuDstMaker.h"
-#include "StMaker.h"
+//#include "StMuDSTMaker/COMMON/StMuDstMaker.h"
+#include "StChain/StMaker.h"
 #include "TString.h"
 
 class TFile;

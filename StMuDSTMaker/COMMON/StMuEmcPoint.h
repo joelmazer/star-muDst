@@ -12,7 +12,7 @@ EmcDet is defined as follow:
 #define StMuEmcPoint__h
  
 #include "TObject.h"
-#include "StMuEmcCluster.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCluster.h"
 
 class StMuEmcPoint: public TObject
 {

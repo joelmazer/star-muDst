@@ -12,7 +12,7 @@
 #ifndef StMuEzTree_h
 #define StMuEzTree_h
 
-#include "StObject.h"
+#include "St_base/StObject.h"
 
 class StEvent;
 class StEmcRawData;

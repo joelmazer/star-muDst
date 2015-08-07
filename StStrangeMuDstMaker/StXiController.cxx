@@ -41,16 +41,16 @@
 #include "StMcEventMaker/StMcEventMaker.h"
 #include "StAssociationMaker/StAssociationMaker.h"
 #include "StAssociationMaker/StTrackPairInfo.hh"
-#include "StTrack.h"
-#include "StGlobalTrack.h"
-#include "StXiVertex.h"
-#include "StXiMuDst.hh"
-#include "StXiMc.hh"
-#include "StMcEventTypes.hh"
-#include "StParticleDefinition.hh"
-#include "StTrackDetectorInfo.h"
+#include "StEvent/StTrack.h"
+#include "StEvent/StGlobalTrack.h"
+#include "StEvent/StXiVertex.h"
+#include "StStrangeMuDstMaker/StXiMuDst.hh"
+#include "StStrangeMuDstMaker/StXiMc.hh"
+#include "StMcEvent/StMcEventTypes.hh"
+#include "StarClassLibrary/StParticleDefinition.hh"
+#include "StEvent/StTrackDetectorInfo.h"
 
-#include "StStrangeControllerInclude.h"  // Location of header for this class
+#include "StStrangeMuDstMaker/StStrangeControllerInclude.h"  // Location of header for this class
 
 class StStrangeEvMuDst;
 

@@ -4,7 +4,7 @@
 #include <string>
 #include "St_base/Stiostream.h"
 #include <typeinfo>
-#include "StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
 
 #ifndef ST_NO_NAMESPACES
 using namespace std;

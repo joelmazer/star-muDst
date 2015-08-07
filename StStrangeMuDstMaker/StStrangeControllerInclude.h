@@ -29,9 +29,9 @@
 // StKinkController strangeness micro DST controller for Kinks          //
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
-#include "StStrangeControllerBase.h"
-#include "StStrangeMuDstMaker.h"
-#include "StMessMgr.h"
+#include "StStrangeMuDstMaker/StStrangeControllerBase.h"
+#include "StStrangeMuDstMaker/StStrangeMuDstMaker.h"
+#include "St_base/StMessMgr.h"
 #include "TClass.h"
 
 //_____________________________________________________________________________

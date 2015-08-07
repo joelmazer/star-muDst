@@ -8,19 +8,19 @@
  *
  **************************************************************************/
 #include "StarClassLibrary/StTimer.hh"
-//#include "StMuEmcUtil.h"
-#include "StMessMgr.h"
-#include "StMuDebug.h"
-#include "StMuIOMaker.h"
-#include "StMuDst.h"
-#include "StMuEvent.h"
+//#include "StMuDSTMaker/COMMON/StMuEmcUtil.h"
+#include "St_base/StMessMgr.h"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuIOMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
 
 #include "TFile.h"
-#include "THack.h"
+#include "StarRoot/THack.h"
 #include "TChain.h"
 #include "TClonesArray.h"
 
-#include "THack.h"
+#include "StarRoot/THack.h"
 ClassImp(StMuIOMaker)
 
 //-----------------------------------------------------------------------

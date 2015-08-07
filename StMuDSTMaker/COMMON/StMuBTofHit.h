@@ -25,8 +25,8 @@
 #include "StarClassLibrary/StThreeVectorF.hh"
 
 class StBTofHit;
-#include "StMuDst.h"
-#include "StMuTrack.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuTrack.h"
 
 class StMuBTofHit : public StObject {
 public:

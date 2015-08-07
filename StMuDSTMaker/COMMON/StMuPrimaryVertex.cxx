@@ -6,7 +6,7 @@
  * $Id: StMuPrimaryVertex.cxx,v 1.11 2013/01/14 23:34:29 fisyak Exp $ 
  */
 
-#include "StMuPrimaryVertex.h"
+#include "StMuDSTMaker/COMMON/StMuPrimaryVertex.h"
 #include "StEvent/StPrimaryVertex.h"
 #include "StEventUtilities/StuRefMult.hh"
 #include "StEventUtilities/StuFtpcRefMult.hh"

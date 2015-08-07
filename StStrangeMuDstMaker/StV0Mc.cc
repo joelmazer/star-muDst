@@ -17,10 +17,10 @@
  * Description: Monte Carlo V0 micro dst class
  *
  ***********************************************************************/
-#include "StV0Mc.hh"
-#include "StMcVertex.hh"
-#include "StMcTrack.hh"
-#include "StDecayMode.hh"
+#include "StStrangeMuDstMaker/StV0Mc.hh"
+#include "StMcEvent/StMcVertex.hh"
+#include "StMcEvent/StMcTrack.hh"
+#include "StStrangeMuDstMaker/StDecayMode.hh"
 
 ClassImp(StV0Mc)
 

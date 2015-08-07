@@ -34,11 +34,11 @@
 #include <assert.h>
 #include <string.h>
 
-#include "StMuPmdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuPmdCollection.h"
 #include "St_base/Stiostream.h"
-#include "StMuPmdUtil.h"
-#include "StMuPmdCluster.h"
-#include "StMuPmdHit.h"
+#include "StMuDSTMaker/COMMON/StMuPmdUtil.h"
+#include "StMuDSTMaker/COMMON/StMuPmdCluster.h"
+#include "StMuDSTMaker/COMMON/StMuPmdHit.h"
 static StMuPmdUtil util; // to ease decoding of EEMC hits
 ClassImp(StMuPmdCollection)
 

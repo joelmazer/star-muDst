@@ -3,14 +3,14 @@
  * $Id: StMuDstFilterMaker.cxx,v 1.17 2011/08/18 18:41:36 fisyak Exp $
  * Author: Frank Laue, BNL, laue@bnl.gov
  ***************************************************************************/
-#include "StMuDstFilterMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDstFilterMaker.h"
 
 #include "StMuDSTMaker/COMMON/StMuTypes.hh"
 
 
 #include "StEvent/StEventTypes.h"
 
-#include "THack.h"
+#include "StarRoot/THack.h"
 #include "TFile.h"
 #include "TTree.h"
 #include "TBranch.h"

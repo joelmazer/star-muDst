@@ -20,9 +20,9 @@
 
 #include <memory>
 
-#include "StGlobals.hh"
+#include "StarClassLibrary/StGlobals.hh"
 
-#include "StMuTofHitCollection.h"
+#include "StMuDSTMaker/COMMON/StMuTofHitCollection.h"
 
 StMuTofHitCollection::StMuTofHitCollection()
 { }

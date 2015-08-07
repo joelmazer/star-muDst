@@ -5,7 +5,7 @@
  *
  ***************************************************************************/
 
-#include "SchedulerExample.h"
+#include "StMuDSTMaker/COMMON/SchedulerExample.h"
 
 #include "St_base/Stiostream.h"
 

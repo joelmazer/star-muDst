@@ -23,18 +23,18 @@
  *
  * ****************************************************************/
 
-#include "StMuPmdUtil.h"
-#include "StEvent.h"
-#include "StEventTypes.h"
-#include "StMuPmdCluster.h"
-#include "StMuPmdHit.h"
-#include "StMuPmdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuPmdUtil.h"
+#include "StEvent/StEvent.h"
+#include "StEvent/StEventTypes.h"
+#include "StMuDSTMaker/COMMON/StMuPmdCluster.h"
+#include "StMuDSTMaker/COMMON/StMuPmdHit.h"
+#include "StMuDSTMaker/COMMON/StMuPmdCollection.h"
 
-#include "StPhmdDetector.h"
-#include "StPhmdClusterCollection.h"
-#include "StPhmdCluster.h"
-#include "StPhmdModule.h"
-#include "StPhmdHit.h"
+#include "StEvent/StPhmdDetector.h"
+#include "StEvent/StPhmdClusterCollection.h"
+#include "StEvent/StPhmdCluster.h"
+#include "StEvent/StPhmdModule.h"
+#include "StEvent/StPhmdHit.h"
 
 ClassImp(StMuPmdUtil)
   

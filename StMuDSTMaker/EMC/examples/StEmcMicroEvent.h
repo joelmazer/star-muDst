@@ -7,10 +7,10 @@ This is the EMC micro Event main structure.
 #define StEmcMicroEvent__h
  
 #include "TObject.h"
-#include "StEmcMicroCollection.h"
-#include "StFpdMicroCollection.h"
-#include "StEmcMicroTrack.h"
-#include "StEmcMicroV0.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroCollection.h"
+#include "StMuDSTMaker/EMC/examples/StFpdMicroCollection.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroTrack.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroV0.h"
 #include "TObjArray.h" 
  
 class StEmcMicroEvent : public TObject 

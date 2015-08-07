@@ -70,8 +70,8 @@ class StMuMtdHeader;
 #include "StarClassLibrary/StPhysicalHelixD.hh"
 
 #include "TObject.h"
-#include "StMuArrays.h"
-#include "StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuArrays.h"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
 
 
 

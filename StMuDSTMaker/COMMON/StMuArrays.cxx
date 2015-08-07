@@ -4,7 +4,7 @@
  * Author: Frank Laue, BNL, laue@bnl.gov
  *
  **************************************************************************/
-#include "StMuArrays.h"
+#include "StMuDSTMaker/COMMON/StMuArrays.h"
 #include "stdio.h"
 #include "assert.h"
 

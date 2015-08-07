@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroTrack.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroTrack.h"
 
 ClassImp(StEmcMicroTrack)
 

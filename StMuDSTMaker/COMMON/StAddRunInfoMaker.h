@@ -6,8 +6,8 @@
 #ifndef StAddRunInfoMaker_hh
 #define StAddRunInfoMaker_hh
 
-#include "StMaker.h"
-#include "StChain.h"
+#include "StChain/StMaker.h"
+#include "StChain/StChain.h"
 
 class StEvent;
 

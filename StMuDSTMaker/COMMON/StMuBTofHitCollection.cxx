@@ -18,8 +18,8 @@
  ****************************************************************/
 
 #include <memory>
-#include "StGlobals.hh"
-#include "StMuBTofHitCollection.h"
+#include "StarClassLibrary/StGlobals.hh"
+#include "StMuDSTMaker/COMMON/StMuBTofHitCollection.h"
 
 StMuBTofHitCollection::StMuBTofHitCollection()
 { }

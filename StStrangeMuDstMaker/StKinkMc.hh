@@ -8,7 +8,7 @@
 
 #ifndef  STAR_StKinkMc
 #define  STAR_StKinkMc
-#include "StKinkBase.hh"
+#include "StStrangeMuDstMaker/StKinkBase.hh"
 
 class StMcVertex;
 class StMcTrack;

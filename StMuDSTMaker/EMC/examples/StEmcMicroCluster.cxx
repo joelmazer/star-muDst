@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroCluster.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroCluster.h"
 
 ClassImp(StEmcMicroCluster)
 

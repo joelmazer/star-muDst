@@ -5,7 +5,7 @@
  *
  ***************************************************************************/
 
-#include "StMuHelix.h"
+#include "StMuDSTMaker/COMMON/StMuHelix.h"
 
 StMuHelix::StMuHelix(const StPhysicalHelixD &hh, double field) {
   mP = hh.momentum(field*kilogauss);

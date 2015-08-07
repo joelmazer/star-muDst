@@ -16,7 +16,7 @@
  *
  * ****************************************************************/
 
-#include "StMuPmdCluster.h"
+#include "StMuDSTMaker/COMMON/StMuPmdCluster.h"
 
 ClassImp(StMuPmdCluster)
 

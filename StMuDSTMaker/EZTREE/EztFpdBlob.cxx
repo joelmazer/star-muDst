@@ -7,7 +7,7 @@
 #include <TArrayS.h>
 #include <TObjArray.h>
 
-#include "EztFpdBlob.h"
+#include "StMuDSTMaker/EZTREE/EztFpdBlob.h"
 ClassImp(EztFpdBlob)
 
 

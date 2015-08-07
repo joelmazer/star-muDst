@@ -6,8 +6,8 @@
 #ifndef StMuDst2StEventMaker_hh
 #define StMuDst2StEventMaker_hh
 
-#include "StMaker.h"
-#include "StChain.h"
+#include "StChain/StMaker.h"
+#include "StChain/StChain.h"
 
 class StMuDstMaker;
 class StEvent;

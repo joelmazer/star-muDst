@@ -1,6 +1,6 @@
-#include "StMtdPidTraits.h"
-#include "StMuMtdPidTraits.h"
-#include "StMuMtdHit.h"
+#include "StEvent/StMtdPidTraits.h"
+#include "StMuDSTMaker/COMMON/StMuMtdPidTraits.h"
+#include "StMuDSTMaker/COMMON/StMuMtdHit.h"
 
 static const char rcsid[] = "$Id: StMuMtdPidTraits.cxx,v 1.3 2014/07/22 19:04:00 jdb Exp $";
 

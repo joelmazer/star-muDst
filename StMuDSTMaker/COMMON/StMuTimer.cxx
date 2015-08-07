@@ -30,7 +30,7 @@
  **************************************************************************/
 #include <time.h>
 #include <stdlib.h>
-#include "StMuTimer.h"
+#include "StMuDSTMaker/COMMON/StMuTimer.h"
 
 ClassImp(StMuTimer)
 

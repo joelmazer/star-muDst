@@ -7,7 +7,7 @@ This is the EMC micro HIT object
 #define StEmcMicroV0__h
  
 #include "TObject.h"
-#include "StEmcMicroTrack.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroTrack.h"
 
 class StEmcMicroV0: public TObject
 {

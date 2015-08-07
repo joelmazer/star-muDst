@@ -4,7 +4,7 @@
 // $Id: StuDraw3DMuEvent.h,v 1.13 2010/01/28 05:27:06 fine Exp $
 // *-- Author :    Valery Fine(fine@bnl.gov)   01/09/2009
 
-#include "StDraw3D.h"
+#include "StarRoot/StDraw3D.h"
 #include "StEvent/StEnumerations.h"
 
   

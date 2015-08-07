@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroEvent.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroEvent.h"
 ClassImp(StEmcMicroEvent)
 
 StEmcMicroEvent::StEmcMicroEvent()

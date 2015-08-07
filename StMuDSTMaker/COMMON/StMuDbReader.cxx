@@ -8,12 +8,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "StMuException.hh"
-#include "StMuDebug.h"
-#include "StMuDbReader.h"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuDbReader.h"
 
-#include "StMaker.h"
-#include "StChain.h"
+#include "StChain/StMaker.h"
+#include "StChain/StChain.h"
 
 ClassImp(StMuDbReader)
 

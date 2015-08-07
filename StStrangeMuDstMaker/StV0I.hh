@@ -10,10 +10,10 @@
 
 #ifndef StV0I_hh
 #define StV0I_hh
-#include "phys_constants.h"
+#include "StHbtMaker/doc/Make/phys_constants.h"
 #include <math.h>
-#include "StStrangeEvMuDst.hh"
-#include "StDecayAngle.hh"
+#include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
+#include "StStrangeMuDstMaker/StDecayAngle.hh"
 
 #ifndef StTrackTopologyMap_hh
 #include "StEvent/StTrackTopologyMap.h"

@@ -11,7 +11,7 @@
 
 #include <TArrayC.h>
  
-#include "StMuEzTree.h"
+#include "StMuDSTMaker/EZTREE/StMuEzTree.h"
 
 #include "StEvent/StEvent.h"
 #include "StEvent/StRunInfo.h"
@@ -25,10 +25,10 @@
 #include "StEvent/StEmcTriggerDetector.h"
 #include "StEvent/StL0Trigger.h"
 
-#include "EztEventHeader.h"
-#include "EztEmcRawData.h"
-#include "EztTrigBlob.h"
-#include "EztFpdBlob.h"
+#include "StMuDSTMaker/EZTREE/EztEventHeader.h"
+#include "StMuDSTMaker/EZTREE/EztEmcRawData.h"
+#include "StMuDSTMaker/EZTREE/EztTrigBlob.h"
+#include "StMuDSTMaker/EZTREE/EztFpdBlob.h"
 
 ClassImp(StMuEzTree)
 

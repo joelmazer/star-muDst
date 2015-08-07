@@ -8,7 +8,7 @@
 #ifndef SchedulerExample_h
 #define SchedulerExample_h
 
-#include "StMaker.h"
+#include "StChain/StMaker.h"
 
 #include <string>
 using std::string;

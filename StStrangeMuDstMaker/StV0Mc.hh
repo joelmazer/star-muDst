@@ -8,8 +8,8 @@
 
 #ifndef  STAR_StV0Mc
 #define  STAR_StV0Mc
-#include "StV0I.hh"
-#include "StStrangeMuDst.hh"
+#include "StStrangeMuDstMaker/StV0I.hh"
+#include "StStrangeMuDstMaker/StStrangeMuDst.hh"
 
 class StMcVertex;
 class StMcTrack;

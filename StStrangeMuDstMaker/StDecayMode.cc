@@ -4,7 +4,7 @@
  *
  ***********************************************************************/
 
-#include "StDecayMode.hh"
+#include "StStrangeMuDstMaker/StDecayMode.hh"
 
 StDecayMode* StDecayMode::mInstance = 0;
 

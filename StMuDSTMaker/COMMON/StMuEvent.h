@@ -9,10 +9,10 @@
 
 #include "TObject.h"
 #include "TArrayI.h"
-#include "StMuL3EventSummary.h"
-#include "StMuEmcCollection.h"
-#include "StMuFmsCollection.h"
-#include "StMuTriggerIdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuL3EventSummary.h"
+#include "StMuDSTMaker/COMMON/StMuEmcCollection.h"
+#include "StMuDSTMaker/COMMON/StMuFmsCollection.h"
+#include "StMuDSTMaker/COMMON/StMuTriggerIdCollection.h"
 
 #include "StEvent/StEventInfo.h"
 #include "StEvent/StRunInfo.h"

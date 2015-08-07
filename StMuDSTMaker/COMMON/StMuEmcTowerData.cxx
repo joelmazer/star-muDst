@@ -7,9 +7,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "StMuEmcTowerData.h"
+#include "StMuDSTMaker/COMMON/StMuEmcTowerData.h"
 #include "St_base/Stiostream.h"
-#include "StMuEmcUtil.h"
+#include "StMuDSTMaker/COMMON/StMuEmcUtil.h"
 static StMuEmcUtil util; // to ease decoding of EEMC hits
 ClassImp(StMuEmcTowerData)
 

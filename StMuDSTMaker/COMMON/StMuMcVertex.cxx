@@ -1,5 +1,5 @@
 // $Id: StMuMcVertex.cxx,v 1.2 2012/05/07 14:47:06 fisyak Exp $
-#include "StMuMcVertex.h"
+#include "StMuDSTMaker/COMMON/StMuMcVertex.h"
 #include "St_base/Stiostream.h"
 #include "TString.h"
 #include "TMath.h"

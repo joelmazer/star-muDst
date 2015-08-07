@@ -13,8 +13,8 @@
 
 #ifndef  STAR_StDecayMode
 #define  STAR_StDecayMode
-#include "StMcVertex.hh"
-#include "StMcTrack.hh"
+#include "StMcEvent/StMcVertex.hh"
+#include "StMcEvent/StMcTrack.hh"
 
 class StMcVertex;
 class StMcTrack;

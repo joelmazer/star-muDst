@@ -9,8 +9,8 @@
 
 #ifndef StV0MuDst_hh
 #define StV0MuDst_hh
-#include "StV0I.hh"
-#include "StStrangeMuDst.hh"
+#include "StStrangeMuDstMaker/StV0I.hh"
+#include "StStrangeMuDstMaker/StStrangeMuDst.hh"
 
 class StVertex;
 class StV0Vertex;

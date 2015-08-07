@@ -1,10 +1,10 @@
 #ifdef __APPLE__
 #include <sys/types.h>
 #endif
-#include "StMuMtdCollection.h"
-#include "StMuMtdRawHit.h"
-#include "StMuMtdHit.h"
-#include "StMuMtdHeader.h"
+#include "StMuDSTMaker/COMMON/StMuMtdCollection.h"
+#include "StMuDSTMaker/COMMON/StMuMtdRawHit.h"
+#include "StMuDSTMaker/COMMON/StMuMtdHit.h"
+#include "StMuDSTMaker/COMMON/StMuMtdHeader.h"
 
 #include "StEvent/StEvent.h"
 #include "StEvent/StMtdCollection.h"

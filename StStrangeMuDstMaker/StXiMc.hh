@@ -9,9 +9,9 @@
 
 #ifndef  STAR_StXiMc
 #define  STAR_StXiMc
-#include "StKinkMc.hh"
-#include "StXiI.hh"
-#include "StDecayMode.hh"
+#include "StStrangeMuDstMaker/StKinkMc.hh"
+#include "StStrangeMuDstMaker/StXiI.hh"
+#include "StStrangeMuDstMaker/StDecayMode.hh"
 
 
 class StXiMc : public StKinkMc, public virtual StXiI {

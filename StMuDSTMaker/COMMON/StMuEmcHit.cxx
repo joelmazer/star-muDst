@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StMuEmcHit.h"
+#include "StMuDSTMaker/COMMON/StMuEmcHit.h"
 
 ClassImp(StMuEmcHit);
 

@@ -10,7 +10,7 @@
  *******************************************************/
 #include <TArrayC.h>
 
-#include "StTriggerDataMother.h"
+#include "StMuDSTMaker/EZTREE/StTriggerDataMother.h"
 #include "StMuDSTMaker/EZTREE/EztTrigBlob.h"
 #include "StEvent/StTriggerData2003.h"
 #include "StEvent/StTriggerData2004.h"

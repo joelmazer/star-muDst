@@ -3,7 +3,7 @@
  * Author: Alex Suaide, Mar 2004, JB
  ************************************************************************/
 
-#include "EztEmcRawData.h"
+#include "StMuDSTMaker/EZTREE/EztEmcRawData.h"
  
 ClassImp(EztEmcRawData)
 

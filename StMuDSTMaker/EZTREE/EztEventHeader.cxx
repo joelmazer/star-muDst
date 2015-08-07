@@ -1,6 +1,6 @@
 // $Id: EztEventHeader.cxx,v 1.1 2004/10/28 00:10:19 mvl Exp $ 
 
-#include "EztEventHeader.h"
+#include "StMuDSTMaker/EZTREE/EztEventHeader.h"
 
 ClassImp(EztEventHeader)
 

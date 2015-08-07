@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroPoint.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroPoint.h"
 #include "TString.h"
 ClassImp(StEmcMicroPoint)
 

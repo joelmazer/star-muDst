@@ -1,10 +1,10 @@
 // $Id: StuDraw3DMuEvent.cxx,v 1.17 2010/04/02 22:34:09 fine Exp $
 // *-- Author :    Valery Fine(fine@bnl.gov)   27/04/2008
-#include "StuDraw3DMuEvent.h"
+#include "StMuDSTMaker/COMMON/StuDraw3DMuEvent.h"
 #include "Gtypes.h"
-#include "StHelixHelper.h"
+#include "StarClassLibrary/StHelixHelper.h"
 #include "StMuDSTMaker/COMMON/StMuTrack.h"
-#include "StThreeVector.hh"
+#include "StarClassLibrary/StThreeVector.hh"
 #include "StEEmcUtil/EEmcGeom/EEmcGeomSimple.h"
 #include "StEmcUtil/geometry/StEmcGeom.h"
 

@@ -10,8 +10,8 @@
 
 #ifndef  STAR_StKinkBase
 #define  STAR_StKinkBase
-#include "StKinkI.hh"
-#include "StStrangeMuDst.hh"
+#include "StStrangeMuDstMaker/StKinkI.hh"
+#include "StStrangeMuDstMaker/StStrangeMuDst.hh"
 
 class StKinkBase : public StStrangeMuDst , public StKinkI {
 public:

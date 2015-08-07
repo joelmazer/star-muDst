@@ -5,9 +5,9 @@
  * Author: Frank Laue, BNL, laue@bnl.gov
  ***************************************************************************/
 
-#include "StMuTrack.h"
-#include "StMuDebug.h"
-#include "StMuException.hh"
+#include "StMuDSTMaker/COMMON/StMuTrack.h"
+#include "StMuDSTMaker/COMMON/StMuDebug.h"
+#include "StMuDSTMaker/COMMON/StMuException.hh"
 #include "StEvent/StEventTypes.h"
 #include "StEvent/StTrackGeometry.h"
 #include "StEvent/StPrimaryVertex.h"
@@ -27,7 +27,7 @@
 #include "StEmcUtil/projection/StEmcPosition.h"
 #include "StEmcUtil/geometry/StEmcGeom.h"
 #include "StBichsel/Bichsel.h"
-#include "THelixTrack.h"
+#include "StarRoot/THelixTrack.h"
 #include "TMath.h"
 #include "TString.h"
 namespace {

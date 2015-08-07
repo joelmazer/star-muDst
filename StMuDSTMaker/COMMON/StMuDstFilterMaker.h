@@ -6,13 +6,13 @@
 #ifndef StMuDstFilterMaker_hh
 #define StMuDstFilterMaker_hh
 
-#include "StMaker.h"
-#include "StChain.h"
+#include "StChain/StMaker.h"
+#include "StChain/StChain.h"
 
-#include "StMuDstMaker.h"
-#include "StMuDst.h"
-#include "StMuEvent.h"
-#include "StMuTrack.h"
+#include "StMuDSTMaker/COMMON/StMuDstMaker.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
+#include "StMuDSTMaker/COMMON/StMuTrack.h"
 #ifndef __NO_STRANGE_MUDST__
 class StStrangeEvMuDst;
 class StV0MuDst;

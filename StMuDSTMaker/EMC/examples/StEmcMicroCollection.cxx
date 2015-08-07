@@ -5,7 +5,7 @@
 //
 // See README for details
 //########################################################### 
-#include "StEmcMicroCollection.h"
+#include "StMuDSTMaker/EMC/examples/StEmcMicroCollection.h"
 
 ClassImp(StEmcMicroCollection)
 
