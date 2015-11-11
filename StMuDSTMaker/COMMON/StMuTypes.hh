@@ -31,3 +31,4 @@
 #include "StMuDSTMaker/COMMON/StMuFmsCollection.h"
 #include "StMuDSTMaker/COMMON/StMuFmsHit.h"
 #include "StMuDSTMaker/COMMON/StMuFmsUtil.h"
+#include "StMuDSTMaker/COMMON/StMuFmsInfo.h"
