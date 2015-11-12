@@ -15,9 +15,9 @@
  *
  *
  *****************************************************************************/ 
-#include "StMuFmsCluster.h"
+#include "StMuDSTMaker/COMMON/StMuFmsCluster.h"
 
-#include "StFmsCluster.h"
+#include "StEvent/StFmsCluster.h"
 
 StMuFmsCluster::StMuFmsCluster(int detectorId, int category, float energy,
                                float x, float y, float smin, float smax,

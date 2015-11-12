@@ -20,8 +20,8 @@
 #include <algorithm>  // For std::min
 #include <cmath>
 
-#include "StFmsPoint.h"
-#include "StMuFmsCluster.h"
+#include "StEvent/StFmsPoint.h"
+#include "StMuDSTMaker/COMMON/StMuFmsCluster.h"
 
 StMuFmsPoint::StMuFmsPoint(int detectorId, float energy,
                            float x, float y, int id)

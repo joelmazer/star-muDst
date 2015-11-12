@@ -21,8 +21,8 @@
 #ifndef STROOT_STMUDSTMAKER_COMMON_STMUFMSPOINT_H_
 #define STROOT_STMUDSTMAKER_COMMON_STMUFMSPOINT_H_
 
-#include "StLorentzVectorF.hh"
-#include "StThreeVectorF.hh"
+#include "StarClassLibrary/StLorentzVectorF.hh"
+#include "StarClassLibrary/StThreeVectorF.hh"
 #include <TObject.h>
 #include <TRef.h>
 
