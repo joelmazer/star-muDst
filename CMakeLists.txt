@@ -32,7 +32,7 @@ include_directories(
 
 # StMuDSTMaker library
 file(GLOB StMuDSTMaker_SOURCES "StMuDSTMaker/COMMON/*.cxx" "StMuDSTMaker/EZTREE/*.cxx")
-root_generate_dictionary(StMuDSTMaker_Cint "StMuDSTMaker/COMMON/*.h" "StMuDSTMaker/COMMON/*.hh" "StMuDSTMaker/EZTREE/*.h" LINKDEF StMuDSTMaker/StMuDSTMakerLinkDef.h OPTIONS -D__ROOT__)
+root_generate_linkdef_and_dictionary(StMuDSTMaker HEADERS "StMuDSTMaker/COMMON/*.h" "StMuDSTMaker/COMMON/*.hh" "StMuDSTMaker/EZTREE/*.h")
 add_library (StMuDSTMaker SHARED ${StMuDSTMaker_SOURCES} StMuDSTMaker_Cint)
 
 
