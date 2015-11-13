@@ -68,7 +68,7 @@
 #include "St_base/StMessMgr.h"
 
 #include <stdlib.h>
-#include "StHbtMaker/doc/Make/phys_constants.h"
+#include "phys_constants.h"
 
 ClassImp(StKinkBase)
 ClassImp(StKinkMuDst)

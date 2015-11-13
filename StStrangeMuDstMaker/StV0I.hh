@@ -10,7 +10,7 @@
 
 #ifndef StV0I_hh
 #define StV0I_hh
-#include "StHbtMaker/doc/Make/phys_constants.h"
+#include "phys_constants.h"
 #include <math.h>
 #include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
 #include "StStrangeMuDstMaker/StDecayAngle.hh"

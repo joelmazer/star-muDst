@@ -26,7 +26,7 @@ include_directories(
 	${STAR_EMC_DIR}
 	${STAR_DAQ_DIR}
 	${STAR_FGT_DIR}
-	${STAR_HBT_DIR}
+	${STAR_PAMS_DIR}
 )
 
 

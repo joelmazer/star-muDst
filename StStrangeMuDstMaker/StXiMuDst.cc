@@ -50,7 +50,7 @@
 #include "StEvent/StTrackFitTraits.h"
 #include "StStrangeMuDstMaker/StStrangeEvMuDst.hh"
 #include "StEvent/StDedxPidTraits.h"
-#include "StHbtMaker/doc/Make/phys_constants.h"
+#include "phys_constants.h"
 #include "StarClassLibrary/SystemOfUnits.h"
 #include "StarClassLibrary/StPhysicalHelixD.hh"
 
