@@ -4,7 +4,7 @@ project(star-muDst)
 
 
 # Add to path in order to pick up the FindXXX.cmake files included in this project
-list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/star-cmake")
 
 # This project depends on ROOT
 find_package(ROOT)
@@ -13,8 +13,11 @@ if(NOT ROOT_FOUND)
 	message(FATAL_ERROR "Fatal error: ROOT package not found")
 endif()
 
+# Perform some setup standard to STAR experiment environment
+include(StarCommon)
 
 add_definitions(-D__ROOT__)
+
 
 include_directories(
 	${ROOT_INCLUDE_DIR}
@@ -33,13 +36,14 @@ include_directories(
 # StMuDSTMaker library
 file(GLOB StMuDSTMaker_SOURCES "StMuDSTMaker/COMMON/*.cxx" "StMuDSTMaker/EZTREE/*.cxx")
 root_generate_linkdef_and_dictionary(StMuDSTMaker HEADERS "StMuDSTMaker/COMMON/*.h" "StMuDSTMaker/COMMON/*.hh" "StMuDSTMaker/EZTREE/*.h")
-add_library (StMuDSTMaker SHARED ${StMuDSTMaker_SOURCES} StMuDSTMaker_Cint)
+add_library (StMuDSTMaker SHARED ${StMuDSTMaker_SOURCES} StMuDSTMaker_dict)
 
 
 # StStrangeMuDstMaker library
 file(GLOB StStrangeMuDstMaker_SOURCES "StStrangeMuDstMaker/*.cxx" "StStrangeMuDstMaker/*.cc")
-root_generate_dictionary(StStrangeMuDstMaker_Cint StStrangeMuDstMaker/*.h StStrangeMuDstMaker/*.hh LINKDEF StStrangeMuDstMaker/StStrangeMuDstMakerLinkDef.h OPTIONS -D__ROOT__)
-add_library (StStrangeMuDstMaker SHARED ${StStrangeMuDstMaker_SOURCES} StStrangeMuDstMaker_Cint)
+root_generate_dictionary(StStrangeMuDstMaker_dict StStrangeMuDstMaker/*.h StStrangeMuDstMaker/*.hh LINKDEF StStrangeMuDstMaker/StStrangeMuDstMakerLinkDef.h OPTIONS -D__ROOT__)
+add_library (StStrangeMuDstMaker SHARED ${StStrangeMuDstMaker_SOURCES} StStrangeMuDstMaker_dict)
 
 
-install(TARGETS StMuDSTMaker StStrangeMuDstMaker DESTINATION "lib")
+install(TARGETS StMuDSTMaker StStrangeMuDstMaker
+	DESTINATION "${STAR_ADDITIONAL_INSTALL_PREFIX}/lib")
