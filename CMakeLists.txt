@@ -45,5 +45,10 @@ root_generate_dictionary(StStrangeMuDstMaker_dict StStrangeMuDstMaker/*.h StStra
 add_library (StStrangeMuDstMaker SHARED ${StStrangeMuDstMaker_SOURCES} StStrangeMuDstMaker_dict)
 
 
+# A collective target to build all libraries in this project. Can be used to
+# build all specified targets from a parent project
+add_custom_target(star-muDst DEPENDS StMuDSTMaker StStrangeMuDstMaker)
+
+
 install(TARGETS StMuDSTMaker StStrangeMuDstMaker
-	DESTINATION "${STAR_ADDITIONAL_INSTALL_PREFIX}/lib")
+	DESTINATION "${STAR_ADDITIONAL_INSTALL_PREFIX}/lib" OPTIONAL)
