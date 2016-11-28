@@ -1500,7 +1500,7 @@ void StMuDstMaker::addTrackNode(const StEvent* ev, const StTrackNode* node, StMu
        vtx = ev->primaryVertex();	
 	
     tr= node->track(global);
-    if (tr && !tr->bad()) index2Global = addTrack(gTCA, ev, tr, vtx, cut, -1, l3, covgTCA, covpTCA);
+    if (tr) index2Global = addTrack(gTCA, ev, tr, vtx, cut, -1, l3, covgTCA, covpTCA);
   }
   /// do primary track track
   if (pTCA) {
