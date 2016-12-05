@@ -1530,7 +1530,6 @@ int StMuDstMaker::addTrack(TClonesArray* tca, const StEvent*event, const StTrack
   /// if (!tca || !track) return index; /// I made sure that the array anf the track is there
   int counter = tca->GetEntries();
   try{
-    if (cut && !cut->pass(track)) throw StMuExceptionBadValue("failed track cut",__PRETTYF__);
     // add StRichSpectra if StRichPidTraits are found
     // we have to do this more elegant
     StRichSpectra* rich = richSpectra(track);
