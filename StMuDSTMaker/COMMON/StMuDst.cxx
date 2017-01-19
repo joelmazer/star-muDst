@@ -1,6 +1,6 @@
 /***************************************************************************
  *
- * $Id: StMuDst.cxx,v 1.66 2016/10/01 21:23:25 jdb Exp $
+ * $Id: StMuDst.cxx,v 1.68 2017/01/19 23:03:19 smirnovd Exp $
  * Author: Frank Laue, BNL, laue@bnl.gov
  *
  ***************************************************************************/
@@ -707,7 +707,7 @@ StTrackGeometry* StMuDst::trackGeometry(int q, StPhysicalHelixD* h) {
   return model;
 }
 
-StTrack* StMuDst::createStTrack(StMuTrack* track) {
+StTrack* StMuDst::createStTrack(const StMuTrack* track) {
   StTrack* t=0;
   StTrackGeometry *tg;
   if (track->bad()) return 0;
@@ -716,6 +716,7 @@ StTrack* StMuDst::createStTrack(StMuTrack* track) {
   if (track->type() == global)  t = new StGlobalTrack();
   assert(t);
   t->setFlag( track->flag() );
+  t->setFlagExtension( track->flagExtension() );
   t->setKey( track->id() );
   
   StPhysicalHelixD helix;
@@ -726,6 +727,8 @@ StTrack* StMuDst::createStTrack(StMuTrack* track) {
   tg = trackGeometry( track->charge(), &helix );
   if (tg) t->setOuterGeometry( tg );
 
+  t->setIdTruth(track->idTruth(), track->qaTruth());
+  t->setIdParentVx( track->idParentVx() );
   t->setLength(track->length());
   t->setImpactParameter(track->dca().mag());
   t->addPidTraits(new StDedxPidTraits(kTpcId, kTruncatedMeanId, track->nHitsDedx(), track->dEdx(),0));
@@ -751,6 +754,9 @@ StTrack* StMuDst::createStTrack(StMuTrack* track) {
   t->setNumberOfPossiblePoints(track->nHitsPoss(kFtpcWestId),kFtpcWestId);
   t->setNumberOfPossiblePoints(track->nHitsPoss(kSvtId),kSvtId);
   t->setNumberOfPossiblePoints(track->nHitsPoss(kSsdId),kSsdId);
+  t->setNumberOfPossiblePoints(track->nHitsPoss(kSstId), kSstId);
+  t->setNumberOfPossiblePoints(track->nHitsPoss(kPxlId), kPxlId);
+  t->setNumberOfPossiblePoints(track->nHitsPoss(kIstId), kIstId);
 
   // set the topology map
   t->setTopologyMap( track->topologyMap() );
@@ -850,6 +856,12 @@ ClassImp(StMuDst)
 /***************************************************************************
  *
  * $Log: StMuDst.cxx,v $
+ * Revision 1.68  2017/01/19 23:03:19  smirnovd
+ * Copy previously missing values in StMuTrack to StTrack conversion
+ *
+ * Revision 1.67  2017/01/19 23:03:13  smirnovd
+ * Promise to not modify original StMuTrack when converting to StTrack
+ *
  * Revision 1.66  2016/10/01 21:23:25  jdb
  * Changed default vertex index to -2. Recently changed it to -1 which caused unintended segfault since -1 is used as a special case value in other parts of the code.
  *
