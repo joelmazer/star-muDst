@@ -23,6 +23,22 @@ StMuPrimaryTrackCovariance::StMuPrimaryTrackCovariance(const Float_t *cov) {
   mPsiTan = cov[10]*TMath::DegToRad(); mPsiPsi = cov[12]*TMath::DegToRad()*TMath::DegToRad();
   mPtiTan = cov[11]                  ; mPtiPsi = cov[13]*TMath::DegToRad()                  ; mPtiPti = cov[14];
 }
+
+
+/**
+ * Constructs StMuPrimaryTrackCovariance from a symmetric matrix packed in
+ * array as a lower triangular matrix.
+ */
+StMuPrimaryTrackCovariance::StMuPrimaryTrackCovariance(const double packedSymMatrix[6])
+{
+  const double* sa = packedSymMatrix;
+
+  mTanTan = sa[0];
+  mPsiTan = sa[1], mPsiPsi = sa[2];
+  mPtiTan = sa[3], mPtiPsi = sa[4], mPtiPti = sa[5];
+}
+
+
 ostream&  operator<<(ostream& os, const StMuPrimaryTrackCovariance& v) {
   TRSymMatrix cov(3,v.errMatrix());
   os << "StMuPrimaryTrackCovariance: " << cov;

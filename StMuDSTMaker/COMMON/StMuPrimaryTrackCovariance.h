@@ -8,6 +8,7 @@ class StMuPrimaryTrackCovariance : public TObject {
   StMuPrimaryTrackCovariance();
   StMuPrimaryTrackCovariance(StMatrixF cov);
   StMuPrimaryTrackCovariance(const Float_t *array);
+  StMuPrimaryTrackCovariance(const double packedSymMatrix[6]);
   virtual ~StMuPrimaryTrackCovariance() {}
   const Float_t*     errMatrix() const {return &mTanTan;}
   virtual void Print(Option_t* option = "") const;
