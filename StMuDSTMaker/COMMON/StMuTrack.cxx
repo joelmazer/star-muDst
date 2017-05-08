@@ -582,6 +582,91 @@ Int_t StMuTrack::vertexIndex() const {
 	else return -1;
 }
 
+
+/**
+ * Converts this track to a primary one by forcing it through the vertex
+ * `stVertex`. The transport is done by means of `THelixTrack` by modifying the
+ * original StDcaGeometry (i.e. the DCA w.r.t. the "beam line" (x, y) = (0, 0))
+ * to the DCA w.r.t. the vertex. The covariance matrix for the new primary track
+ * direction (StMuPrimaryTrackCovariance) is calculated and added to the
+ * corresponding array in StMuDst.
+ */
+void StMuTrack::convertToPrimary(StMuDst& stMuDst, const StPrimaryVertex* stVertex, int vertexIndex)
+{
+  // Only global StMuTracks should have StDcaGeometry
+  TClonesArray*  covGlobTracks = stMuDst.covGlobTrack();
+  StDcaGeometry* stDcaGeometry = nullptr;
+
+  if (covGlobTracks)
+     stDcaGeometry = static_cast<StDcaGeometry*>(covGlobTracks->At(mIndex2Cov));
+
+  if (!stDcaGeometry)
+  {
+    std::cout << "ERROR: Cannot make StMuTrack primary due to missing StDcaGeometry\n";
+    return;
+  }
+
+  // Get the vertex position and covariance matrix
+  double vertexParams[3];
+  double vertexCovMatrix[6];
+
+  const float* vertexPositionF = stVertex->position().xyz();
+  std::copy(vertexPositionF, vertexPositionF+3, vertexParams);
+
+  stVertex->covarianceMatrix(vertexCovMatrix);
+
+  // Get the track parameters near the vertex
+  // First move the parameters from the default DCA to the vertex DCA
+  THelixTrack tHelixTrack = stDcaGeometry->thelix();
+
+  tHelixTrack.Move( tHelixTrack.Path(vertexParams) );
+
+  // Now the track is in the new location closest to the vertex
+  double trackParams[6];
+  double trackCovMatrix[21];
+
+  tHelixTrack.StiParams(trackParams, stDcaGeometry->momentum().mag());
+  tHelixTrack.StiEmx(trackCovMatrix);
+
+  // Now calculate the new track parameters constrained by the vertex
+  double trackParamsNew[6];
+  double trackCovMatrixNew[21];
+
+  StMuUtilities::joinVtx(vertexParams,   vertexCovMatrix,
+                         trackParams,    trackCovMatrix,
+                         trackParamsNew, trackCovMatrixNew);
+
+  // Add covariance for the new primary track to StMuDst
+  // We need to convert from Sti basis (phi, 1/pt, tanL) to (tanL, phi, 1/pti)
+  // Switch to the new basis with reordered parameters by using matrix:
+  //      [0 0 1]                   [ 9      ]     [0    ]     [5    ]
+  // J =  [1 0 0]    reduced covM = [13 14   ] <=> [1 2  ]  => [3 0  ]
+  //      [0 1 0]                   [18 19 20]     [3 4 5]     [4 1 2]
+  const double primTrackCovMatrix[6] =
+  {
+    trackCovMatrixNew[20],
+    trackCovMatrixNew[18], trackCovMatrixNew[9],
+    trackCovMatrixNew[19], trackCovMatrixNew[13], trackCovMatrixNew[14]
+  };
+
+  TClonesArray* covPrimTrack   = stMuDst.covPrimTrack();
+  unsigned      nCovPrimTracks = stMuDst.numberOfCovPrimTracks();
+
+  new((*covPrimTrack)[nCovPrimTracks]) StMuPrimaryTrackCovariance(primTrackCovMatrix);
+
+  // Set the corresponding index to StMuPrimaryTrackCovariance
+  mIndex2Cov = nCovPrimTracks;
+
+  // Set the remaining quantities
+  mPt   = mP.perp();
+  mPhi  = mP.phi();
+  mEta  = mP.pseudoRapidity();
+  mType = primary;
+  mVertexIndex = vertexIndex;
+}
+
+
+
 TArrayI StMuTrack::getTower(Bool_t useExitRadius,Int_t det) const{ //1=BTOW, 3=BSMDE, 4=BSMDP... Returns TVector tower. tower[0] is module, tower[1] is eta, tower[2] is sub, and tower[3] is id
 	
 //	StMuTrack* track = this;

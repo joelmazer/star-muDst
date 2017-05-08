@@ -48,6 +48,7 @@ class StVertex;
 class StEmcGeom;
 class StEmcPosition;
 class StuProbabilityPidAlgorithm;
+class StPrimaryVertex;
 
 class TObjArray;
 
@@ -71,6 +72,11 @@ class StMuTrack : public TObject {
     void setVertexIndex(Int_t i) { mVertexIndex=i; } ///< Set index of primary vertex for which dca is stored
     const StMuTrack* globalTrack() const; ///< Returns pointer to associated global track. Null pointer if no global track available.
     const StMuTrack* primaryTrack() const; ///< Returns pointer to associated primary track. Null pointer if no global track available.
+
+    /// Converts this (global) track to a primary one by making it pass through
+    /// the vertex
+    void convertToPrimary(StMuDst& stMuDst, const StPrimaryVertex* stVertex, int vertexIndex);
+
     const StRichSpectra* richSpectra() const; ///< Returns pointer to associated rich spectra. Null pointer if no global track available.
     const StMuBTofHit* tofHit() const;  /// dongx
     const StMuMtdHit* mtdHit() const;  /// Bingchu
