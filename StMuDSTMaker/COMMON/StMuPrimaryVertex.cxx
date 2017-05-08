@@ -13,7 +13,7 @@
 #include "TString.h"
 ClassImp(StMuPrimaryVertex)
   
-StMuPrimaryVertex::StMuPrimaryVertex(const StPrimaryVertex*& vertex)
+StMuPrimaryVertex::StMuPrimaryVertex(const StPrimaryVertex* vertex)
 {
   mFlag                  = vertex->flag();
   mPosition              = vertex->position();

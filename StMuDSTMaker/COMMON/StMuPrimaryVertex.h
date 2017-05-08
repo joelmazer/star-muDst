@@ -22,7 +22,7 @@ class StMuPrimaryVertex : public TObject {
     mSumTrackPt(-999),mMeanDip(-999), mChiSquared(9999), mNTracks(0), mNTpcWestOnly(0), mNTpcEastOnly(0), mRefMultNeg(0), mRefMultPos(0), mRefMultFtpcWest(0), 
     mRefMultFtpcEast(0), mIdTruth(0), mQuality(0), mIdParent(0) {}
 
-  StMuPrimaryVertex(const StPrimaryVertex*& vertex);
+  StMuPrimaryVertex(const StPrimaryVertex* vertex);
 
   ~StMuPrimaryVertex() {;}
    Int_t            flag() const {return mFlag; }
