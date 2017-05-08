@@ -42,6 +42,21 @@ inline double unPack(T v, U scale) {
 
 
 
+namespace StMuUtilities {
+
+
+/**
+ * This is almost an identical copy of StiTrackNodeHelper::joinVtx() with
+ * modifications to make it independent of Sti libraries.
+ */
+double joinVtx(const double Y[3], const double B[6],
+               const double X[6], const double A[21],
+                     double M[6],       double C[21]);
+
+
+}
+
+
 #endif
 
 /***********************************************************************
