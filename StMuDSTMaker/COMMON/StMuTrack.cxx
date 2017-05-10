@@ -29,6 +29,7 @@
 #include "StBichsel/Bichsel.h"
 #include "StBichsel/StdEdxModel.h"
 #include "StarRoot/THelixTrack.h"
+#include "TCernLib.h"
 #include "TMath.h"
 #include "TString.h"
 namespace {
@@ -616,10 +617,32 @@ void StMuTrack::convertToPrimary(StMuDst& stMuDst, const StPrimaryVertex* stVert
   stVertex->covarianceMatrix(vertexCovMatrix);
 
   // Get the track parameters near the vertex
-  // First move the parameters from the default DCA to the vertex DCA
+  // First move the parameters from the default DCA to the vertex 2D DCA
   THelixTrack tHelixTrack = stDcaGeometry->thelix();
 
-  tHelixTrack.Move( tHelixTrack.Path(vertexParams) );
+  // 2D DCA to the line parallel to z and going through the vertex (x,y)
+  tHelixTrack.Move( tHelixTrack.Path(vertexParams[0], vertexParams[1]) );
+
+  // The angle
+  double alpha = -TMath::ATan2(tHelixTrack.Dir()[1], tHelixTrack.Dir()[0]);
+
+  // The rotation matrix
+  double rotMatrix[9] = {
+     std::cos(alpha), -std::sin(alpha), 0,
+     std::sin(alpha),  std::cos(alpha), 0,
+                   0,                0, 1
+  };
+
+  // Rotate the helix
+  tHelixTrack.Rot( alpha );
+
+  // Rotate the vertex by the same angle
+  double vertexParams_rot[3];
+  TCL::vmatl(rotMatrix, vertexParams, vertexParams_rot, 3, 3);
+
+  // Rotate the vertex error matrix
+  double vertexCovMatrix_rot[6];
+  TCL::trasat(rotMatrix, vertexCovMatrix, vertexCovMatrix_rot, 3, 3);
 
   // Now the track is in the new location closest to the vertex
   double trackParams[6];
@@ -632,9 +655,9 @@ void StMuTrack::convertToPrimary(StMuDst& stMuDst, const StPrimaryVertex* stVert
   double trackParamsNew[6];
   double trackCovMatrixNew[21];
 
-  StMuUtilities::joinVtx(vertexParams,   vertexCovMatrix,
-                         trackParams,    trackCovMatrix,
-                         trackParamsNew, trackCovMatrixNew);
+  StMuUtilities::joinVtx(vertexParams_rot, vertexCovMatrix_rot,
+                         trackParams,      trackCovMatrix,
+                         trackParamsNew,   trackCovMatrixNew);
 
   // Add covariance for the new primary track to StMuDst
   // We need to convert from Sti basis (phi, 1/pt, tanL) to (tanL, phi, 1/pti)
