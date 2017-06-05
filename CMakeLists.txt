@@ -27,6 +27,7 @@ include_directories(
 	${STAR_SIM_DIR}
 	${STAR_TABLES_DIR}
 	${STAR_EMC_DIR}
+	${STAR_FMS_DIR}
 	${STAR_DAQ_DIR}
 	${STAR_FGT_DIR}
 	${STAR_PAMS_DIR}/global/inc

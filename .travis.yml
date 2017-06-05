@@ -41,13 +41,14 @@ before_script:
   - git clone --depth=1 https://github.com/star-bnl/star-sim.git     ext/star-sim
   - git clone --depth=1 https://github.com/star-bnl/star-tables.git  ext/star-tables
   - git clone --depth=1 https://github.com/star-bnl/star-emc.git     ext/star-emc
+  - git clone --depth=1 https://github.com/star-bnl/star-fms.git     ext/star-fms
   - git clone --depth=1 https://github.com/star-bnl/star-daq.git     ext/star-daq
   - git clone --depth=1 https://github.com/star-bnl/star-fgt.git     ext/star-fgt
   - git clone --depth=1 https://github.com/star-bnl/star-pams.git    ext/star-pams
 
 script:
   - mkdir build/ && cd build/ && pwd
-  - cmake -D STAR_BASE_DIR=ext/star-base -D STAR_STEVENT_DIR=ext/star-stevent -D STAR_SIM_DIR=ext/star-sim -D STAR_TABLES_DIR=ext/star-tables -D STAR_EMC_DIR=ext/star-emc -D STAR_DAQ_DIR=ext/star-daq -D STAR_FGT_DIR=ext/star-fgt -D STAR_PAMS_DIR=ext/star-pams ../
+  - cmake -D STAR_BASE_DIR=ext/star-base -D STAR_STEVENT_DIR=ext/star-stevent -D STAR_SIM_DIR=ext/star-sim -D STAR_TABLES_DIR=ext/star-tables -D STAR_EMC_DIR=ext/star-emc -D STAR_FMS_DIR=ext/star-fms -D STAR_DAQ_DIR=ext/star-daq -D STAR_FGT_DIR=ext/star-fgt -D STAR_PAMS_DIR=ext/star-pams ../
   - cmake -D CMAKE_INSTALL_PREFIX=./ -D CMAKE_BUILD_TYPE=Release ../
   - make -j4 && make install && make clean
   - pwd && ls -la ./ && ls -la lib/
