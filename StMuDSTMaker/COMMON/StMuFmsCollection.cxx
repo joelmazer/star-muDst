@@ -61,11 +61,11 @@ void StMuFmsCollection::init() {
   mInfo = new TClonesArray("StMuFmsInfo", 0);
 }
 
-void StMuFmsCollection::addHit(){
+StMuFmsHit* StMuFmsCollection::addHit(){
   if(!mHits) init();
   int counter = mHits->GetEntriesFast();
-  new ((*mHits)[counter]) StMuFmsHit();
-  return;
+  StMuFmsHit* newFmsHit = new ((*mHits)[counter]) StMuFmsHit();
+  return newFmsHit;
 }
 
 void StMuFmsCollection::addCluster() {

@@ -43,7 +43,7 @@ public:
     ~StMuFmsCollection();
     
     void          init();
-    void          addHit();
+    StMuFmsHit*   addHit();
     void          addCluster();
     void          addInfo();
     StMuFmsPoint* addPoint();
