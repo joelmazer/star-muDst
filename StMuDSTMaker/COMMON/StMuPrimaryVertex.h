@@ -4,7 +4,7 @@
  * Simple class to store primary vertices. Data members are a mainly a copy of 
  * StPrimaryVertex
  *
- * $Id: StMuPrimaryVertex.h,v 1.10 2017/04/17 19:19:43 smirnovd Exp $ 
+ * $Id: StMuPrimaryVertex.h,v 1.11 2017/05/17 16:03:04 smirnovd Exp $ 
  */
 
 #include "TObject.h"
@@ -106,6 +106,9 @@ ostream&              operator<<(ostream& os,  const StMuPrimaryVertex& v);
 #endif
 /*
  * $Log: StMuPrimaryVertex.h,v $
+ * Revision 1.11  2017/05/17 16:03:04  smirnovd
+ * StMuPrimaryVertex: Passing pointer by reference is pointless
+ *
  * Revision 1.10  2017/04/17 19:19:43  smirnovd
  * [Cosmetic] Whitespace adjustments
  *
