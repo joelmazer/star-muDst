@@ -24,19 +24,18 @@
  class StMuFmsCollection;
  class StFmsCollection;
 
- class StMuFmsUtil : public TObject
- {
-   protected:
+class StMuFmsUtil : public TObject
+{
+public:
+  StMuFmsUtil();
+  ~StMuFmsUtil();
+  StMuFmsCollection* getMuFms(StFmsCollection*);
+  StFmsCollection*   getFms(StMuFmsCollection*);
+  void               fillMuFms(StMuFmsCollection*,StFmsCollection*);
+  void               fillFms(StFmsCollection*,StMuFmsCollection*);
 
-   public:
-			StMuFmsUtil();
-			~StMuFmsUtil();
-     StMuFmsCollection* getMuFms(StFmsCollection*);
-     StFmsCollection*   getFms(StMuFmsCollection*);
-     void               fillMuFms(StMuFmsCollection*,StFmsCollection*);
-     void               fillFms(StFmsCollection*,StMuFmsCollection*);
+private:
 
-   private:
   /** Create StMuFmsHits from StFmsHits and fill StMuFmsCollection */
   void fillMuFmsHits(StMuFmsCollection*, StFmsCollection*);
   /** Create StMuFmsClusters from StFmsClusters and fill StMuFmsCollection */
