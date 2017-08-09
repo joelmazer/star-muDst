@@ -37,6 +37,8 @@
 #include "StMuDSTMaker/COMMON/StMuFmsPoint.h"
 #include "StMuDSTMaker/COMMON/StMuFmsUtil.h"
 #include "StMuDSTMaker/COMMON/StMuFmsCollection.h"
+#include "StMuDSTMaker/COMMON/StMuDst.h"
+#include "StMuDSTMaker/COMMON/StMuEvent.h"
 #include "StEvent/StEvent.h"
 #include "St_base/StMessMgr.h"
 #include "StEvent/StEventTypes.h"
@@ -217,6 +219,27 @@ void StMuFmsUtil::fillMuFmsHits(StMuFmsCollection& muFmsCollection,
         muFmsHit->setEnergy(energy);
       }
     }
+  }
+}
+
+
+/**
+ * In the provided `muDst` object fills StMuFmsCollection with FMS hits
+ * extracted from the StTriggerData block in the same `muDst`. The action takes
+ * place only if there are no FMS hits in the muDst's StMuFmsCollection thus we
+ * refer to this as "recovery". "Physical" properties of StMuFmsHit such as
+ * "energy" etc. will be filled only if an optional StFmsDbMaker object is
+ * provided.
+ */
+void StMuFmsUtil::recoverMuFmsCollection(StMuDst& muDst, const StFmsDbMaker* fmsDbMaker)
+{
+  StTriggerData* triggerData = (StTriggerData*) muDst.event()->triggerData();
+
+  const TClonesArray* muFmsHits = muDst.muFmsCollection() ? muDst.muFmsCollection()->getHitArray() : nullptr;
+
+  if (triggerData && muFmsHits && muFmsHits->GetEntriesFast() == 0)
+  {
+     fillMuFmsHits(*muDst.muFmsCollection(), *triggerData, fmsDbMaker);
   }
 }
 
