@@ -23,6 +23,9 @@
 
  class StMuFmsCollection;
  class StFmsCollection;
+ class StFmsDbMaker;
+ class StTriggerData;
+
 
 class StMuFmsUtil : public TObject
 {
@@ -33,6 +36,12 @@ public:
   StFmsCollection*   getFms(StMuFmsCollection*);
   void               fillMuFms(StMuFmsCollection*,StFmsCollection*);
   void               fillFms(StFmsCollection*,StMuFmsCollection*);
+
+  /**
+   * Creates `StMuFmsHit`s from the StTriggerData object and appends them to the
+   * StMuFmsCollection.
+   */
+  static void fillMuFmsHits(StMuFmsCollection&, const StTriggerData&, const StFmsDbMaker* = nullptr);
 
 private:
 

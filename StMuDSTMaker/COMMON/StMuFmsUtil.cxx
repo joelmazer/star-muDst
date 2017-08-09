@@ -40,6 +40,8 @@
 #include "StEvent/StEvent.h"
 #include "St_base/StMessMgr.h"
 #include "StEvent/StEventTypes.h"
+#include "StEvent/StTriggerData.h"
+#include "StFmsDbMaker/StFmsDbMaker.h"
 
 #include <algorithm>  // For std::find
 #include <iterator>  // For std::distance
@@ -162,6 +164,63 @@ void StMuFmsUtil::fillMuFmsHits(StMuFmsCollection* muFms,
     muFmsHit->setEnergy(ene);
   }
 }
+
+
+
+/**
+ * Creates `StMuFmsHit`s from `StTriggerData` and appends them to
+ * `StMuFmsCollection`. Some of this code is taken from `StFmsHitMaker::Make()`
+ * that implements a similar conversion: `StTriggerData` -> `StFmsCollection`
+ * "Physical" properties of StMuFmsHit such as "energy" etc. will be filled only
+ * if an optional StFmsDbMaker object is provided.
+ */
+void StMuFmsUtil::fillMuFmsHits(StMuFmsCollection& muFmsCollection,
+  const StTriggerData& triggerData, const StFmsDbMaker* fmsDbMaker)
+{
+
+  // Loop over "electronics" channels and extract raw hit data from StTriggerData
+  for(unsigned short crate=1; crate<=4; crate++)
+  {
+    for(unsigned short slot=1; slot<=16; slot++)
+    {
+      for(unsigned short ch=0; ch<32; ch++)
+      {
+        unsigned short adc = triggerData.fmsADC(crate,slot-1,ch);
+        unsigned short tdc = triggerData.fmsTDC(crate,slot-1,ch);
+
+        if (adc <= 0 && tdc <= 0) continue;
+
+        StMuFmsHit* muFmsHit = muFmsCollection.addHit();
+
+        muFmsHit->setQtCrate(crate);
+        muFmsHit->setQtSlot(slot);
+        muFmsHit->setQtChannel(ch);
+        muFmsHit->setAdc(adc);
+        muFmsHit->setTdc(tdc);
+
+        // Can proceed with "physical" quantities only if fmsDbMaker is available
+        if ( !fmsDbMaker ) continue;
+
+        int detectorId, channelId;
+
+        fmsDbMaker->getReverseMap(crate, slot, ch, &detectorId, &channelId);
+
+        // Cannot not proceed with invalid detector and channel IDs
+        if ( detectorId <= 0 && channelId <= 0) continue;
+
+        float g1 = fmsDbMaker->getGain(detectorId, channelId);
+        float g2 = fmsDbMaker->getGainCorrection(detectorId, channelId);
+        float energy  = adc*g1*g2;
+
+        muFmsHit->setDetectorId(detectorId);
+        muFmsHit->setChannel(channelId);
+        muFmsHit->setEnergy(energy);
+      }
+    }
+  }
+}
+
+
 
 void StMuFmsUtil::fillMuFmsClusters(StMuFmsCollection* muFms,
                                     StFmsCollection* fmscol) {
